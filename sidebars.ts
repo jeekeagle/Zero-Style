@@ -7,7 +7,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '视觉表现 · Visual Styles',
       collapsed: false,
-      link: { type: 'doc', id: 'styles/visual/_category' },
+      link: { type: 'doc', id: 'styles/visual/index' },
       items: [
         'styles/visual/minimalism',
         'styles/visual/memphis',
@@ -25,7 +25,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '东方古典 · Eastern Classical',
       collapsed: false,
-      link: { type: 'doc', id: 'styles/eastern/_category' },
+      link: { type: 'doc', id: 'styles/eastern/index' },
       items: [
         'styles/eastern/chinese-ink',
         'styles/eastern/japanese-zen',
@@ -40,7 +40,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '配色方案 · Color Schemes',
       collapsed: false,
-      link: { type: 'doc', id: 'styles/color/_category' },
+      link: { type: 'doc', id: 'styles/color/index' },
       items: [
         'styles/color/morandi',
         'styles/color/macaron',
@@ -55,7 +55,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '字体排版 · Typography',
       collapsed: false,
-      link: { type: 'doc', id: 'styles/typography/_category' },
+      link: { type: 'doc', id: 'styles/typography/index' },
       items: [
         'styles/typography/serif-classic',
         'styles/typography/sans-modern',
@@ -69,7 +69,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '时代年代 · Era',
       collapsed: false,
-      link: { type: 'doc', id: 'styles/era/_category' },
+      link: { type: 'doc', id: 'styles/era/index' },
       items: [
         'styles/era/y2k',
         'styles/era/psychedelic-60s',
@@ -83,7 +83,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '材质纹理 · Material',
       collapsed: false,
-      link: { type: 'doc', id: 'styles/material/_category' },
+      link: { type: 'doc', id: 'styles/material/index' },
       items: [
         'styles/material/paper-texture',
         'styles/material/frosted-glass',
@@ -97,7 +97,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '现代趋势 · Modern Trends',
       collapsed: false,
-      link: { type: 'doc', id: 'styles/modern/_category' },
+      link: { type: 'doc', id: 'styles/modern/index' },
       items: [
         'styles/modern/modern-tech',
         'styles/modern/editorial',

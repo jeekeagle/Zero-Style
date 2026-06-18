@@ -592,7 +592,7 @@ for cat in CATEGORIES:
     cat_dir = ROOT / cat['id']
     cat_dir.mkdir(parents=True, exist_ok=True)
     cat_styles = [s for s in STYLES if s['category'] == cat['id']]
-    (cat_dir / '_category.md').write_text(category_page(cat, cat_styles), encoding='utf-8')
+    (cat_dir / 'index.md').write_text(category_page(cat, cat_styles), encoding='utf-8')
     for s in cat_styles:
         (cat_dir / f"{s['slug']}.md").write_text(style_page(s), encoding='utf-8')
     print(f"✓ {cat['name']}: {len(cat_styles)} 种风格")
