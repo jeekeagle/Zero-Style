@@ -1,0 +1,2358 @@
+/* =============================================================
+   Zero-Style 详情页专属样式
+   每个 .style-{slug} 对应一种风格的视觉外观
+   通过 MDX frontmatter 的 wrapperClassName 注入
+   ============================================================= */
+
+/* 通用包装:所有风格页都有圆角、内边距,作为各风格 CSS 的基础 */
+[class*="style-"] {
+  padding: 3rem 2.5rem 4rem;
+  border-radius: 16px;
+  margin: 1.5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+[class*="style-"] article {
+  position: relative;
+  z-index: 2;
+}
+
+[class*="style-"] article h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.04em;
+}
+
+[class*="style-"] article h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 2.5rem 0 1rem;
+  letter-spacing: 0.03em;
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 0.5rem;
+  opacity: 0.85;
+}
+
+[class*="style-"] article p,
+[class*="style-"] article li {
+  line-height: 1.8;
+}
+
+[class*="style-"] article blockquote {
+  border-left: 4px solid currentColor;
+  background: rgba(0, 0, 0, 0.06);
+  padding: 1rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  font-weight: 500;
+  margin: 1.5rem 0;
+}
+
+[class*="style-"] article table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.95em;
+}
+
+[class*="style-"] article table th,
+[class*="style-"] article table td {
+  padding: 0.7rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+[class*="style-"] article code {
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+[class*="style-"] article hr {
+  border: 0;
+  height: 2px;
+  background: currentColor;
+  opacity: 0.2;
+  margin: 2.5rem 0;
+}
+
+/* =================================================================
+   一、视觉表现 (10 styles)
+   ================================================================= */
+
+/* 1. 极简主义 - 大量留白,黑白灰,几何点 */
+.style-minimalism {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+.style-minimalism::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 1px;
+  background: #000;
+  z-index: 1;
+  opacity: 0.1;
+}
+.style-minimalism article h1 {
+  font-weight: 200;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.1em;
+}
+.style-minimalism article h2 {
+  font-weight: 300;
+  text-align: center;
+  border: none;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.style-minimalism article blockquote {
+  text-align: center;
+  border: none;
+  background: none;
+  font-style: italic;
+}
+
+/* 2. 孟菲斯 - 鲜艳撞色 + 几何块 */
+.style-memphis {
+  background: #ffd93d;
+  color: #1a1a1a;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 800;
+}
+.style-memphis::before {
+  content: '';
+  position: absolute;
+  top: 8%;
+  right: 6%;
+  width: 80px;
+  height: 80px;
+  background: #ff6b9d;
+  border-radius: 50%;
+  z-index: 1;
+}
+.style-memphis::after {
+  content: '';
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  width: 100px;
+  height: 60px;
+  background: #4d96ff;
+  border-radius: 8px;
+  transform: rotate(12deg);
+  z-index: 1;
+}
+.style-memphis article h1 {
+  background: #ff6b9d;
+  color: white;
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  transform: rotate(-2deg);
+  font-size: 2.4rem;
+}
+.style-memphis article h2 {
+  border-bottom: 4px solid #000;
+  background: #4d96ff;
+  color: white;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+.style-memphis article blockquote {
+  background: #000;
+  color: #ffd93d;
+  border-left: 8px solid #ff6b9d;
+  font-weight: 700;
+}
+
+/* 3. 新拟物 - 米色 + 同色阴影 */
+.style-neumorphism {
+  background: #e0e5ec;
+  color: #3a3a3a;
+  font-family: 'Inter', sans-serif;
+  box-shadow: inset 12px 12px 24px #a3b1c6, inset -12px -12px 24px #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.style-neumorphism article h1 {
+  color: #2a3a52;
+  text-shadow: 2px 2px 4px rgba(163, 177, 198, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+}
+.style-neumorphism article h2 {
+  color: #5a6c8a;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid #c8d0de;
+}
+.style-neumorphism article table {
+  background: #e0e5ec;
+  box-shadow: 4px 4px 8px #a3b1c6, -4px -4px 8px #ffffff;
+}
+.style-neumorphism article blockquote {
+  background: #e0e5ec;
+  color: #5a6c8a;
+  border-left: 4px solid #a3b1c6;
+  box-shadow: 2px 2px 4px #a3b1c6, -2px -2px 4px #ffffff;
+}
+
+/* 4. 玻璃拟态 - 彩色渐变 + 毛玻璃 */
+.style-glassmorphism {
+  background: linear-gradient(135deg, #7c3aed 0%, #ec4899 50%, #06b6d4 100%);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+.style-glassmorphism::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.3), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.2), transparent 40%);
+  z-index: 1;
+}
+.style-glassmorphism article {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+.style-glassmorphism article h1 {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+.style-glassmorphism article h2 {
+  border-bottom-color: rgba(255, 255, 255, 0.4);
+}
+.style-glassmorphism article table {
+  background: rgba(255, 255, 255, 0.1);
+}
+.style-glassmorphism article table th {
+  background: rgba(255, 255, 255, 0.2);
+}
+.style-glassmorphism article blockquote {
+  background: rgba(255, 255, 255, 0.15);
+  border-left-color: rgba(255, 255, 255, 0.6);
+  color: #fff;
+}
+.style-glassmorphism article code {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+/* 5. 赛博朋克 - 暗底 + 霓虹 + 等宽 */
+.style-cyberpunk {
+  background: #0a0a0a;
+  color: #00f5ff;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  border: 1px solid #ff006e;
+  box-shadow: inset 0 0 60px rgba(255, 0, 110, 0.1);
+}
+.style-cyberpunk::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(0deg, transparent 0, transparent 3px, rgba(0, 245, 255, 0.03) 3px, rgba(0, 245, 255, 0.03) 4px);
+  pointer-events: none;
+  z-index: 1;
+}
+.style-cyberpunk article h1 {
+  color: #ff006e;
+  text-shadow: 2px 0 #00f5ff, -2px 0 #00f5ff, 0 0 20px rgba(255, 0, 110, 0.5);
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.style-cyberpunk article h2 {
+  color: #00f5ff;
+  text-shadow: 0 0 8px #00f5ff;
+  border-bottom: 1px dashed #ff006e;
+}
+.style-cyberpunk article blockquote {
+  background: rgba(255, 0, 110, 0.15);
+  border-left: 4px solid #ff006e;
+  color: #00f5ff;
+  text-shadow: 0 0 4px #00f5ff;
+}
+.style-cyberpunk article code {
+  background: #1a0a14;
+  color: #ff006e;
+  border: 1px solid #ff006e;
+}
+.style-cyberpunk article table {
+  background: #0a0a0a;
+  border: 1px solid #00f5ff;
+}
+.style-cyberpunk article table th {
+  background: #1a0a14;
+  color: #ff006e;
+}
+.style-cyberpunk article a {
+  color: #00f5ff;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #ff006e;
+}
+
+/* 6. 蒸汽波 - 紫粉渐变 + 透视网格 */
+.style-vaporwave {
+  background: linear-gradient(180deg, #1a0b2e 0%, #4a1a5c 30%, #ec4899 70%, #06b6d4 100%);
+  color: #ffffff;
+  font-family: 'Helvetica', sans-serif;
+}
+.style-vaporwave::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background-image:
+    linear-gradient(transparent 60%, rgba(0, 0, 0, 0.3) 100%),
+    repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4) 2px, transparent 2px, transparent 50px),
+    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4) 2px, transparent 2px, transparent 50px);
+  mask-image: linear-gradient(0deg, black 30%, transparent 100%);
+  -webkit-mask-image: linear-gradient(0deg, black 30%, transparent 100%);
+  z-index: 1;
+}
+.style-vaporwave article h1 {
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ec4899;
+  text-shadow: 3px 3px 0 #06b6d4, 6px 6px 0 #1a0b2e;
+}
+.style-vaporwave article h2 {
+  color: #a855f7;
+  border-bottom: 2px solid #ec4899;
+  text-shadow: 0 0 8px rgba(168, 85, 247, 0.6);
+}
+
+/* 7. 像素复古 - 黑色硬边 + 限定色 */
+.style-pixel-retro {
+  background: #003049;
+  color: #fcbf49;
+  font-family: 'Press Start 2P', 'JetBrains Mono', monospace;
+  border: 4px solid #d62828;
+  image-rendering: pixelated;
+  letter-spacing: 0.05em;
+  line-height: 1.9;
+}
+.style-pixel-retro article h1 {
+  color: #fcbf49;
+  text-shadow: 3px 3px 0 #d62828;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+}
+.style-pixel-retro article h2 {
+  color: #f77f00;
+  border-bottom: 4px solid #d62828;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.style-pixel-retro article table {
+  background: #003049;
+  border: 2px solid #fcbf49;
+}
+.style-pixel-retro article table th {
+  background: #d62828;
+  color: #fff;
+}
+.style-pixel-retro article blockquote {
+  background: #000;
+  border: 3px solid #fcbf49;
+  border-left: 6px solid #d62828;
+  color: #fcbf49;
+}
+.style-pixel-retro article code {
+  background: #d62828;
+  color: #fff;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7em;
+}
+.style-pixel-retro article a {
+  color: #f77f00;
+  text-decoration: underline;
+}
+
+/* 8. 瑞士国际 - 白底 + 严谨网格 + 红色 */
+.style-swiss-design {
+  background: #ffffff;
+  color: #000000;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Inter', sans-serif;
+  border-top: 8px solid #000;
+  border-bottom: 8px solid #000;
+}
+.style-swiss-design::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background-image: repeating-linear-gradient(0deg, transparent 0, transparent 28px, rgba(0, 0, 0, 0.06) 28px, rgba(0, 0, 0, 0.06) 29px);
+  z-index: 1;
+  pointer-events: none;
+}
+.style-swiss-design article h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: #000;
+  border-left: 12px solid #e30613;
+  padding-left: 1rem;
+}
+.style-swiss-design article h2 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-bottom: 2px solid #e30613;
+  color: #000;
+}
+.style-swiss-design article table th {
+  background: #e30613;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.08em;
+}
+.style-swiss-design article blockquote {
+  background: #f5f5f5;
+  border-left: 4px solid #e30613;
+  font-weight: 500;
+}
+
+/* 9. 包豪斯 - 米色 + 几何 + 三原色 */
+.style-bauhaus {
+  background: #f5e8c7;
+  color: #1a1a1a;
+  font-family: 'Futura', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+}
+.style-bauhaus::before {
+  content: '';
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 100px;
+  height: 100px;
+  background: #e63946;
+  border-radius: 50%;
+  z-index: 1;
+}
+.style-bauhaus::after {
+  content: '';
+  position: absolute;
+  bottom: 8%;
+  right: 8%;
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid #1d3557;
+  z-index: 1;
+}
+.style-bauhaus article h1 {
+  color: #e63946;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 900;
+}
+.style-bauhaus article h2 {
+  color: #1d3557;
+  border-bottom: 4px solid #f1c40f;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 0.08em;
+}
+.style-bauhaus article blockquote {
+  background: #1d3557;
+  color: #f5e8c7;
+  border-left: 6px solid #e63946;
+}
+
+/* 10. 装饰艺术 - 深绿金 + 奢华几何 */
+.style-art-deco {
+  background: linear-gradient(135deg, #0f3a2e 0%, #1a1a1a 100%);
+  color: #d4af37;
+  font-family: 'Poiret One', 'Limelight', 'Playfair Display', serif;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+.style-art-deco::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 80%;
+  background:
+    radial-gradient(circle at center, transparent 30%, rgba(212, 175, 55, 0.2) 31%, rgba(212, 175, 55, 0.2) 35%, transparent 36%),
+    repeating-conic-gradient(from 0deg, transparent 0deg 25deg, rgba(212, 175, 55, 0.15) 25deg 27deg, transparent 27deg 60deg);
+  z-index: 1;
+  pointer-events: none;
+}
+.style-art-deco article h1 {
+  color: #d4af37;
+  font-size: 2.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  text-shadow: 0 2px 8px rgba(212, 175, 55, 0.5);
+}
+.style-art-deco article h2 {
+  color: #d4af37;
+  border-bottom: 1px solid #d4af37;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 1.2rem;
+}
+.style-art-deco article blockquote {
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid #d4af37;
+  border-left: 4px solid #d4af37;
+  color: #d4af37;
+  font-style: italic;
+}
+
+/* =================================================================
+   二、东方古典 (7 styles)
+   ================================================================= */
+
+/* 11. 中国水墨 - 宣纸 + 墨色 + 朱砂印章 */
+.style-chinese-ink {
+  background: #f5e8c7;
+  color: #1a1a1a;
+  font-family: 'KaiTi', 'STKaiti', 'LXGW WenKai', serif;
+  letter-spacing: 0.05em;
+}
+.style-chinese-ink::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(ellipse at 30% 80%, rgba(26, 26, 26, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 30%, rgba(26, 26, 26, 0.04) 0%, transparent 40%);
+  z-index: 1;
+  pointer-events: none;
+}
+.style-chinese-ink::after {
+  content: '墨';
+  position: absolute;
+  top: 8%;
+  right: 6%;
+  width: 80px;
+  height: 80px;
+  background: #c0392b;
+  color: #f5e8c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  transform: rotate(-6deg);
+  border: 3px solid #c0392b;
+  font-family: 'KaiTi', serif;
+  z-index: 3;
+}
+.style-chinese-ink article h1 {
+  color: #1a1a1a;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+.style-chinese-ink article h2 {
+  color: #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+.style-chinese-ink article blockquote {
+  background: rgba(26, 26, 26, 0.05);
+  border-left: 4px solid #1a1a1a;
+  font-style: italic;
+}
+.style-chinese-ink article table th {
+  background: #1a1a1a;
+  color: #f5e8c7;
+}
+
+/* 12. 日式禅意 - 米白 + 大量留白 + 圆相 */
+.style-japanese-zen {
+  background: #f5f0e8;
+  color: #2c2c2c;
+  font-family: 'Yu Mincho', 'Songti SC', serif;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.1em;
+  line-height: 2;
+}
+.style-japanese-zen::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 180px;
+  border: 1px solid #1a1a1a;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, transparent 38%, #c43e3e 39%, #c43e3e 43%, transparent 44%);
+  z-index: 1;
+  opacity: 0.7;
+}
+.style-japanese-zen article {
+  background: rgba(245, 240, 232, 0.7);
+}
+.style-japanese-zen article h1 {
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  font-size: 2.2rem;
+  color: #1a1a1a;
+}
+.style-japanese-zen article h2 {
+  text-align: center;
+  font-weight: 300;
+  border: none;
+  letter-spacing: 0.4em;
+  color: #5a5a5a;
+  text-transform: none;
+  font-size: 1.1rem;
+}
+.style-japanese-zen article blockquote {
+  text-align: center;
+  border: none;
+  background: none;
+  font-style: italic;
+  color: #5a5a5a;
+}
+
+/* 13. 浮世绘 - 平涂色 + 蓝色波浪 */
+.style-ukiyo-e {
+  background: linear-gradient(180deg, #f5e8c7 0%, #f5e8c7 50%, #1f3a93 50%, #1f3a93 100%);
+  color: #1a1a1a;
+  font-family: 'Yu Mincho', 'Songti SC', serif;
+  border: 2px solid #1a1a1a;
+}
+.style-ukiyo-e::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #1a1a1a;
+  z-index: 1;
+}
+.style-ukiyo-e article h1 {
+  color: #c0392b;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-shadow: 1px 1px 0 #d4af37;
+}
+.style-ukiyo-e article h2 {
+  color: #1f3a93;
+  border-bottom: 3px double #c0392b;
+  font-weight: 700;
+}
+.style-ukiyo-e article blockquote {
+  background: #c0392b;
+  color: #f5e8c7;
+  border: 2px solid #1a1a1a;
+  font-weight: 500;
+}
+
+/* 14. 阿拉伯几何 - 深蓝 + 金色八角星 */
+.style-arabic-geometric {
+  background: #1e3a8a;
+  color: #d4af37;
+  font-family: 'Scheherazade', 'Amiri', serif;
+  font-weight: 500;
+}
+.style-arabic-geometric::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    repeating-conic-gradient(from 0deg at 50% 50%, transparent 0deg 22deg, rgba(212, 175, 55, 0.15) 22deg 25deg, transparent 25deg 67deg, rgba(212, 175, 55, 0.15) 67deg 70deg, transparent 70deg 112deg, rgba(212, 175, 55, 0.15) 112deg 115deg, transparent 115deg 157deg, rgba(212, 175, 55, 0.15) 157deg 160deg, transparent 160deg 202deg, rgba(212, 175, 55, 0.15) 202deg 205deg, transparent 205deg 247deg, rgba(212, 175, 55, 0.15) 247deg 250deg, transparent 250deg 292deg, rgba(212, 175, 55, 0.15) 292deg 295deg, transparent 295deg 337deg, rgba(212, 175, 55, 0.15) 337deg 340deg, transparent 340deg 360deg);
+  background-size: 240px 240px;
+  background-position: center;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.5;
+}
+.style-arabic-geometric article h1 {
+  text-align: center;
+  color: #d4af37;
+  font-size: 2.6rem;
+  letter-spacing: 0.15em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+.style-arabic-geometric article h2 {
+  color: #d4af37;
+  border-bottom: 1px solid #d4af37;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+.style-arabic-geometric article blockquote {
+  background: rgba(212, 175, 55, 0.15);
+  border: 1px solid #d4af37;
+  border-left: 4px solid #d4af37;
+  color: #d4af37;
+}
+
+/* 15. 印度曼海蒂 - 米色 + 海娜棕藤蔓 */
+.style-indian-mehndi {
+  background: #fef3c7;
+  color: #8b4513;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+}
+.style-indian-mehndi::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    radial-gradient(circle at 10% 20%, #8b4513 1.5px, transparent 2.5px),
+    radial-gradient(circle at 30% 70%, #8b4513 1.5px, transparent 2.5px),
+    radial-gradient(circle at 50% 30%, #8b4513 1.5px, transparent 2.5px),
+    radial-gradient(circle at 70% 80%, #8b4513 1.5px, transparent 2.5px),
+    radial-gradient(circle at 90% 50%, #8b4513 1.5px, transparent 2.5px);
+  background-size: 80px 80px;
+  z-index: 1;
+  opacity: 0.3;
+  pointer-events: none;
+}
+.style-indian-mehndi article h1 {
+  color: #c0392b;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.style-indian-mehndi article h2 {
+  color: #8b4513;
+  border-bottom: 2px dotted #8b4513;
+  text-align: center;
+  font-style: italic;
+}
+.style-indian-mehndi article blockquote {
+  background: rgba(139, 69, 19, 0.1);
+  border: 2px solid #8b4513;
+  border-left: 6px solid #c0392b;
+  color: #5c3317;
+  font-style: italic;
+}
+
+/* 16. 唐卷草纹 - 深棕 + 金色藤蔓 */
+.style-tang-pattern {
+  background: #1a1a1a;
+  color: #d4af37;
+  font-family: 'KaiTi', 'STKaiti', serif;
+  border: 3px solid #d4af37;
+  letter-spacing: 0.05em;
+}
+.style-tang-pattern::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(45deg, transparent 0, transparent 30px, rgba(212, 175, 55, 0.08) 30px, rgba(212, 175, 55, 0.08) 33px),
+    repeating-linear-gradient(-45deg, transparent 0, transparent 30px, rgba(212, 175, 55, 0.08) 30px, rgba(212, 175, 55, 0.08) 33px);
+  z-index: 1;
+  pointer-events: none;
+}
+.style-tang-pattern article h1 {
+  color: #d4af37;
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+.style-tang-pattern article h2 {
+  color: #d4af37;
+  border-bottom: 1px solid #d4af37;
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+}
+.style-tang-pattern article blockquote {
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid #d4af37;
+  border-left: 4px solid #d4af37;
+  color: #d4af37;
+}
+.style-tang-pattern article code {
+  background: rgba(212, 175, 55, 0.15);
+  color: #d4af37;
+}
+
+/* 17. 青花瓷 - 白底 + 钴蓝 */
+.style-blue-white-porcelain {
+  background: #f5f5f0;
+  color: #1e3a8a;
+  font-family: 'KaiTi', 'STKaiti', serif;
+  border: 2px solid #1e3a8a;
+}
+.style-blue-white-porcelain::before {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  border: 1px solid #1e3a8a;
+  pointer-events: none;
+  z-index: 1;
+}
+.style-blue-white-porcelain article h1 {
+  color: #1e3a8a;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  border-bottom: 2px double #1e3a8a;
+  padding-bottom: 0.8rem;
+}
+.style-blue-white-porcelain article h2 {
+  color: #1e3a8a;
+  border-bottom: 1px solid #1e3a8a;
+  text-align: center;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+}
+.style-blue-white-porcelain article table {
+  background: #f5f5f0;
+  border: 1px solid #1e3a8a;
+}
+.style-blue-white-porcelain article table th {
+  background: #1e3a8a;
+  color: #f5f5f0;
+}
+.style-blue-white-porcelain article blockquote {
+  background: rgba(30, 58, 138, 0.05);
+  border: 1px solid #1e3a8a;
+  border-left: 4px solid #1e3a8a;
+  color: #1e3a8a;
+}
+
+/* =================================================================
+   三、配色方案 (7 styles)
+   ================================================================= */
+
+/* 18. 莫兰迪 - 灰调柔色 */
+.style-morandi {
+  background: #e8e3db;
+  color: #3a3a3a;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+.style-morandi article h1 {
+  color: #5a5a5a;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+.style-morandi article h2 {
+  color: #6a6a6a;
+  border-bottom: 1px solid #b5a8a0;
+  font-weight: 400;
+}
+.style-morandi article table th {
+  background: #a8b8c8;
+  color: #2a3a4a;
+}
+.style-morandi article blockquote {
+  background: rgba(168, 184, 200, 0.2);
+  border-left: 4px solid #a8b8c8;
+  color: #4a4a4a;
+  font-style: italic;
+}
+
+/* 19. 马卡龙 - 柔粉嫩色 */
+.style-macaron {
+  background: linear-gradient(135deg, #ffd1dc 0%, #fff0f5 50%, #e0f5e8 100%);
+  color: #5a3a4a;
+  font-family: 'Quicksand', 'PingFang SC', sans-serif;
+  font-weight: 500;
+  border-radius: 20px;
+}
+.style-macaron article h1 {
+  color: #c43e6e;
+  font-weight: 700;
+}
+.style-macaron article h2 {
+  color: #5a8a8a;
+  border-bottom: 2px solid #ffd1dc;
+}
+.style-macaron article table th {
+  background: #ffd1dc;
+  color: #5a3a4a;
+}
+.style-macaron article blockquote {
+  background: rgba(255, 209, 220, 0.4);
+  border-left: 4px solid #e0a8c0;
+  color: #5a3a4a;
+  border-radius: 8px;
+}
+
+/* 20. 大地色 - 棕陶橄榄 */
+.style-earth-tone {
+  background: linear-gradient(135deg, #c87856 0%, #a67c52 50%, #7a8450 100%);
+  color: #f5e8d0;
+  font-family: 'Lora', 'Georgia', serif;
+  font-weight: 500;
+}
+.style-earth-tone article h1 {
+  color: #f5e8d0;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.style-earth-tone article h2 {
+  color: #f5e8d0;
+  border-bottom: 1px solid rgba(245, 232, 208, 0.5);
+}
+.style-earth-tone article table th {
+  background: rgba(0, 0, 0, 0.3);
+  color: #f5e8d0;
+}
+.style-earth-tone article blockquote {
+  background: rgba(0, 0, 0, 0.2);
+  border-left: 4px solid #f5e8d0;
+  color: #f5e8d0;
+}
+
+/* 21. 霓虹荧光 - 黑底 + 强荧光 */
+.style-neon {
+  background: #0a0a0a;
+  color: #39ff14;
+  font-family: 'Audiowide', 'JetBrains Mono', monospace;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 4px currentColor;
+}
+.style-neon article h1 {
+  color: #ff10f0;
+  font-size: 2.6rem;
+  text-shadow: 0 0 12px #ff10f0, 0 0 24px #ff10f0, 0 0 36px #bc13fe;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.style-neon article h2 {
+  color: #39ff14;
+  border-bottom: 2px solid #39ff14;
+  text-shadow: 0 0 8px #39ff14;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.style-neon article blockquote {
+  background: rgba(57, 255, 20, 0.1);
+  border: 1px solid #39ff14;
+  border-left: 4px solid #ff10f0;
+  color: #39ff14;
+}
+.style-neon article code {
+  background: #bc13fe;
+  color: #0a0a0a;
+  text-shadow: none;
+}
+.style-neon article a {
+  color: #ff10f0;
+  text-decoration: underline wavy;
+  text-shadow: 0 0 4px #ff10f0;
+}
+
+/* 22. 单色调 - 蓝灰渐变层次 */
+.style-monochrome {
+  background: linear-gradient(180deg, #0a1628 0%, #1e3a8a 50%, #bfdbfe 100%);
+  color: #1a1a1a;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+.style-monochrome article {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  margin: 1rem;
+}
+.style-monochrome article h1 {
+  color: #0a1628;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.style-monochrome article h2 {
+  color: #1e3a8a;
+  border-bottom: 2px solid #1e3a8a;
+}
+.style-monochrome article blockquote {
+  background: #f0f4fa;
+  border-left: 4px solid #1e3a8a;
+  color: #1e3a8a;
+}
+
+/* 23. 复古胶片 - 暖色 + 颗粒 */
+.style-film-retro {
+  background: #f4e4c1;
+  color: #5b8fa8;
+  font-family: 'Special Elite', 'Courier New', monospace;
+  font-weight: 500;
+  position: relative;
+}
+.style-film-retro::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.35) 100%),
+    radial-gradient(circle at 20% 30%, rgba(232, 155, 108, 0.3), transparent 30%);
+  z-index: 1;
+  pointer-events: none;
+}
+.style-film-retro::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(91, 143, 168, 0.2) 1px, transparent 1px);
+  background-size: 3px 3px;
+  z-index: 1;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+}
+.style-film-retro article h1 {
+  color: #5b8fa8;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+}
+.style-film-retro article h2 {
+  color: #c87856;
+  border-bottom: 1px dashed #5b8fa8;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.style-film-retro article blockquote {
+  background: rgba(91, 143, 168, 0.15);
+  border: 1px solid #5b8fa8;
+  border-left: 4px solid #c87856;
+  color: #5b8fa8;
+  font-style: italic;
+}
+
+/* 24. 粉彩 - 浅柔色调 */
+.style-pastel {
+  background: linear-gradient(180deg, #ffb3ba 0%, #fde2e4 25%, #fdf6f0 50%, #ffffba 75%, #b5ead7 100%);
+  color: #4a3a4a;
+  font-family: 'Quicksand', 'PingFang SC', sans-serif;
+  font-weight: 500;
+}
+.style-pastel article h1 {
+  text-align: center;
+  color: #c43e6e;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.style-pastel article h2 {
+  color: #6a8aaa;
+  border-bottom: 2px dotted #ffb3ba;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+.style-pastel article table th {
+  background: #ffb3ba;
+  color: #4a3a4a;
+}
+.style-pastel article blockquote {
+  background: rgba(255, 255, 255, 0.5);
+  border-left: 4px solid #b5ead7;
+  color: #4a3a4a;
+  border-radius: 0 12px 12px 0;
+}
+
+/* =================================================================
+   四、字体排版 (6 styles)
+   ================================================================= */
+
+/* 25. 衬线经典 - 书籍风格 */
+.style-serif-classic {
+  background: #f5f0e8;
+  color: #1a1a1a;
+  font-family: 'Playfair Display', 'Times New Roman', 'Garamond', serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  line-height: 1.9;
+  border: 1px solid #d4c8b0;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.style-serif-classic article h1 {
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.8rem;
+  letter-spacing: 0.05em;
+  color: #1a1a1a;
+}
+.style-serif-classic article h2 {
+  text-align: center;
+  font-style: italic;
+  border: none;
+  color: #5a4a3a;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-size: 1.3rem;
+}
+.style-serif-classic article blockquote {
+  text-align: center;
+  font-style: italic;
+  border: none;
+  background: none;
+  font-size: 1.15rem;
+  color: #5a4a3a;
+}
+.style-serif-classic article table {
+  font-family: 'Garamond', serif;
+  font-style: italic;
+}
+.style-serif-classic article table th {
+  background: #1a1a1a;
+  color: #f5f0e8;
+  font-weight: 600;
+}
+
+/* 26. 无衬线现代 - 干净清晰 */
+.style-sans-modern {
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: 'Inter', 'Helvetica Neue', 'SF Pro', sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.7;
+}
+.style-sans-modern article h1 {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  font-size: 2.8rem;
+  line-height: 1.1;
+  color: #1a1a1a;
+}
+.style-sans-modern article h2 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  border-bottom: 1px solid #e5e5e5;
+  color: #1a1a1a;
+}
+.style-sans-modern article table th {
+  background: #f5f5f5;
+  color: #1a1a1a;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+}
+
+/* 27. 手写体 - 温度与个人化 */
+.style-hand-written {
+  background: #fdf6e3;
+  color: #2a2a2a;
+  font-family: 'Caveat', 'KaiTi', 'Comic Sans MS', cursive;
+  font-size: 1.2rem;
+  line-height: 1.9;
+  border: 2px dashed #c4a070;
+  transform: rotate(-0.3deg);
+}
+.style-hand-written article h1 {
+  color: #c43e3e;
+  font-weight: 700;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.02em;
+}
+.style-hand-written article h2 {
+  color: #2a4a8a;
+  border-bottom: 2px dashed #c4a070;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.style-hand-written article blockquote {
+  background: #fff8e1;
+  border: 2px dashed #c4a070;
+  border-left: 6px solid #c43e3e;
+  color: #2a2a2a;
+  font-style: italic;
+  transform: rotate(0.3deg);
+}
+
+/* 28. 像素字 - 8-bit 风格 */
+.style-pixel-font {
+  background: #000000;
+  color: #39ff14;
+  font-family: 'Press Start 2P', 'JetBrains Mono', monospace;
+  image-rendering: pixelated;
+  border: 4px solid #39ff14;
+  letter-spacing: 0.05em;
+  line-height: 1.9;
+  font-size: 0.95rem;
+}
+.style-pixel-font article h1 {
+  color: #39ff14;
+  font-size: 1.8rem;
+  text-shadow: 3px 3px 0 #ff10f0;
+  letter-spacing: 0.1em;
+}
+.style-pixel-font article h2 {
+  color: #ff10f0;
+  border-bottom: 4px solid #39ff14;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.style-pixel-font article table {
+  background: #000;
+  border: 2px solid #39ff14;
+}
+.style-pixel-font article table th {
+  background: #ff10f0;
+  color: #000;
+  font-size: 0.7em;
+  letter-spacing: 0.05em;
+}
+.style-pixel-font article blockquote {
+  background: #111;
+  border: 3px solid #39ff14;
+  border-left: 6px solid #ff10f0;
+  color: #39ff14;
+  font-size: 0.85em;
+}
+.style-pixel-font article code {
+  background: #ff10f0;
+  color: #000;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.7em;
+}
+.style-pixel-font article a {
+  color: #ffea00;
+  text-decoration: underline;
+}
+
+/* 29. 汉字楷书 - 端正工整 */
+.style-chinese-kai {
+  background: #f5e8c7;
+  color: #1a1a1a;
+  font-family: 'KaiTi', 'STKaiti', 'LXGW WenKai', serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  line-height: 2.1;
+  border: 1px solid #c4a070;
+}
+.style-chinese-kai::before {
+  content: '永';
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  font-family: 'KaiTi', serif;
+  font-size: 4rem;
+  color: rgba(192, 57, 43, 0.15);
+  font-weight: 700;
+  z-index: 1;
+}
+.style-chinese-kai article h1 {
+  color: #1a1a1a;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  font-size: 2.4rem;
+}
+.style-chinese-kai article h2 {
+  color: #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+}
+.style-chinese-kai article blockquote {
+  background: rgba(192, 57, 43, 0.08);
+  border-left: 4px solid #1a1a1a;
+  color: #1a1a1a;
+  font-style: normal;
+}
+.style-chinese-kai article table th {
+  background: #1a1a1a;
+  color: #f5e8c7;
+  font-weight: 600;
+}
+
+/* 30. 等宽字 - 终端代码风 */
+.style-monospace {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Menlo', monospace;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  border: 1px solid #3b82f6;
+}
+.style-monospace article h1 {
+  color: #3b82f6;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.style-monospace article h1::before {
+  content: '$ ';
+  color: #22c55e;
+}
+.style-monospace article h2 {
+  color: #22c55e;
+  border-bottom: 1px dashed #3b82f6;
+  font-weight: 600;
+}
+.style-monospace article h2::before {
+  content: '> ';
+  color: #3b82f6;
+}
+.style-monospace article blockquote {
+  background: #0a0a0a;
+  border-left: 4px solid #22c55e;
+  color: #d4d4d4;
+}
+.style-monospace article blockquote::before {
+  content: '// ';
+  color: #6a737d;
+}
+.style-monospace article code {
+  background: #0a0a0a;
+  color: #f97583;
+  border: 1px solid #333;
+}
+.style-monospace article table th {
+  background: #0a0a0a;
+  color: #3b82f6;
+  border: 1px solid #333;
+}
+.style-monospace article table td {
+  border: 1px solid #333;
+}
+.style-monospace article a {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+/* =================================================================
+   五、时代年代 (6 styles)
+   ================================================================= */
+
+/* 31. Y2K - 蓝紫渐变 + 铬金属 */
+.style-y2k {
+  background: linear-gradient(135deg, #0066ff 0%, #8a2be2 100%);
+  color: #ffffff;
+  font-family: 'Audiowide', 'Helvetica', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border: 3px solid #c0c0c0;
+  box-shadow: inset 0 0 40px rgba(192, 192, 192, 0.3);
+}
+.style-y2k::before {
+  content: '';
+  position: absolute;
+  top: 8%;
+  right: 6%;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #c0c0c0 0%, #ffffff 50%, #c0c0c0 100%);
+  border-radius: 50%;
+  box-shadow: 4px 4px 0 rgba(255, 105, 180, 0.8);
+  z-index: 1;
+}
+.style-y2k article h1 {
+  color: #ffffff;
+  text-shadow: 3px 3px 0 #0066ff, -3px -3px 0 #ff69b4;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.style-y2k article h2 {
+  color: #ff69b4;
+  border-bottom: 2px solid #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.style-y2k article blockquote {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+  border-left: 6px solid #ff69b4;
+  color: #ffffff;
+  backdrop-filter: blur(8px);
+}
+
+/* 32. 60年代迷幻 - 橙紫黄漩涡 */
+.style-psychedelic-60s {
+  background: linear-gradient(45deg, #ff6600 0%, #ffff00 50%, #9933ff 100%);
+  color: #ffffff;
+  font-family: 'Lobster', 'Pacifico', cursive;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.style-psychedelic-60s::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255, 102, 0, 0.7) 0%, transparent 25%),
+    radial-gradient(circle at 80% 70%, rgba(255, 255, 0, 0.6) 0%, transparent 30%),
+    radial-gradient(circle at 50% 50%, rgba(153, 51, 255, 0.7) 0%, transparent 30%),
+    radial-gradient(circle at 70% 20%, rgba(0, 255, 255, 0.5) 0%, transparent 25%);
+  filter: blur(30px);
+  z-index: 1;
+  pointer-events: none;
+}
+.style-psychedelic-60s article {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+}
+.style-psychedelic-60s article h1 {
+  color: #ffff00;
+  text-shadow: 2px 2px 0 #ff6600, 4px 4px 0 #9933ff;
+  font-size: 3rem;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.style-psychedelic-60s article h2 {
+  color: #ffffff;
+  border-bottom: 3px solid #ffff00;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+.style-psychedelic-60s article blockquote {
+  background: rgba(153, 51, 255, 0.4);
+  border: 2px solid #ffff00;
+  color: #ffffff;
+  font-style: italic;
+}
+
+/* 33. 80年代复古 - 霓虹渐变 + 网格 */
+.style-retro-80s {
+  background: linear-gradient(180deg, #ff10f0 0%, #6633ff 60%, #00ffff 100%);
+  color: #ffffff;
+  font-family: 'Audiowide', 'Helvetica', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.style-retro-80s::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background-image:
+    linear-gradient(transparent 65%, rgba(0, 0, 0, 0.5) 65%),
+    repeating-linear-gradient(90deg, transparent 0, transparent 40px, rgba(0, 0, 0, 0.4) 40px, rgba(0, 0, 0, 0.4) 42px);
+  mask-image: linear-gradient(0deg, black 0%, transparent 100%);
+  -webkit-mask-image: linear-gradient(0deg, black 0%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+.style-retro-80s article h1 {
+  color: #ffffff;
+  text-shadow: 3px 3px 0 #ff10f0, 6px 6px 0 #6633ff;
+  font-size: 2.8rem;
+}
+.style-retro-80s article h2 {
+  color: #00ffff;
+  border-bottom: 2px solid #ff10f0;
+  text-shadow: 0 0 8px #00ffff;
+}
+.style-retro-80s article blockquote {
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #00ffff;
+  border-left: 6px solid #ff10f0;
+  color: #ffffff;
+}
+
+/* 34. 90年代垃圾摇滚 - 撕裂纸张 */
+.style-grunge-90s {
+  background: #6b7280;
+  color: #1a1a1a;
+  font-family: 'Impact', 'Helvetica', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.style-grunge-90s::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 40%, rgba(0, 0, 0, 0.15) 0%, transparent 30%),
+    radial-gradient(circle at 70% 60%, rgba(139, 0, 0, 0.2) 0%, transparent 30%);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23n)' opacity='0.2'/%3E%3C/svg%3E");
+  z-index: 1;
+  pointer-events: none;
+}
+.style-grunge-90s article {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem 2.5rem;
+  margin: 1rem;
+  border-radius: 2px;
+  transform: rotate(-0.5deg);
+  box-shadow: 3px 3px 0 #1a1a1a;
+}
+.style-grunge-90s article h1 {
+  color: #8b0000;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  font-size: 2.6rem;
+}
+.style-grunge-90s article h2 {
+  color: #1a1a1a;
+  border-bottom: 4px solid #8b0000;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.style-grunge-90s article blockquote {
+  background: #1a1a1a;
+  color: #c87856;
+  border-left: 4px solid #8b0000;
+  font-weight: 700;
+}
+
+/* 35. 70年代迪斯科 - 棕金奢华 */
+.style-disco-70s {
+  background: linear-gradient(135deg, #c87856 0%, #5c3317 100%);
+  color: #d4af37;
+  font-family: 'Poiret One', 'Limelight', 'Playfair Display', serif;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.style-disco-70s::before {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background:
+    radial-gradient(circle at 20% 20%, #d4af37 3px, transparent 4px),
+    radial-gradient(circle at 50% 30%, #d4af37 3px, transparent 4px),
+    radial-gradient(circle at 80% 20%, #d4af37 3px, transparent 4px),
+    radial-gradient(circle at 30% 70%, #d4af37 3px, transparent 4px),
+    radial-gradient(circle at 70% 70%, #d4af37 3px, transparent 4px),
+    radial-gradient(circle at 50% 50%, #d4af37 4px, transparent 5px);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.7;
+}
+.style-disco-70s article h1 {
+  color: #d4af37;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 2.4rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.style-disco-70s article h2 {
+  color: #d4af37;
+  border-bottom: 1px solid #d4af37;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.style-disco-70s article blockquote {
+  background: rgba(212, 175, 55, 0.15);
+  border: 1px solid #d4af37;
+  border-left: 4px solid #d4af37;
+  color: #d4af37;
+  font-style: italic;
+}
+
+/* 36. 90年代MTV - 撞色卡通 */
+.style-mtv-90s {
+  background: #ffff00;
+  color: #ff1493;
+  font-family: 'Impact', 'Bebas Neue', sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  border: 4px solid #ff1493;
+  transform: rotate(0.3deg);
+}
+.style-mtv-90s::before {
+  content: '';
+  position: absolute;
+  top: 8%;
+  right: 6%;
+  width: 80px;
+  height: 80px;
+  background: #00bfff;
+  border-radius: 50%;
+  z-index: 1;
+}
+.style-mtv-90s::after {
+  content: '';
+  position: absolute;
+  bottom: 8%;
+  left: 6%;
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid #ff1493;
+  z-index: 1;
+}
+.style-mtv-90s article h1 {
+  color: #ff1493;
+  text-shadow: 3px 3px 0 #00bfff;
+  text-transform: uppercase;
+  font-size: 3rem;
+  transform: rotate(-2deg);
+}
+.style-mtv-90s article h2 {
+  color: #00bfff;
+  border-bottom: 4px solid #ff1493;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 #ffff00;
+  transform: rotate(-1deg);
+}
+.style-mtv-90s article blockquote {
+  background: #ff1493;
+  color: #ffff00;
+  border: 3px solid #00bfff;
+  font-weight: 700;
+}
+
+/* =================================================================
+   六、材质纹理 (6 styles)
+   ================================================================= */
+
+/* 37. 纸张纹理 - 牛皮纸 + 颗粒 */
+.style-paper-texture {
+  background: #c9a878;
+  color: #1a1a1a;
+  font-family: 'Georgia', serif;
+  font-weight: 500;
+  line-height: 1.9;
+}
+.style-paper-texture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.12) 1px, transparent 2px),
+    radial-gradient(circle at 60% 70%, rgba(0, 0, 0, 0.10) 1px, transparent 2px),
+    radial-gradient(circle at 80% 30%, rgba(0, 0, 0, 0.10) 1px, transparent 2px),
+    radial-gradient(circle at 30% 80%, rgba(0, 0, 0, 0.12) 1px, transparent 2px);
+  background-size: 20px 20px, 25px 25px, 18px 18px, 22px 22px;
+  z-index: 1;
+  pointer-events: none;
+}
+.style-paper-texture article {
+  background: rgba(255, 250, 240, 0.5);
+  padding: 2rem;
+  border-radius: 4px;
+}
+.style-paper-texture article h1 {
+  color: #5c3317;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+.style-paper-texture article h2 {
+  color: #5c3317;
+  border-bottom: 2px solid #5c3317;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.style-paper-texture article blockquote {
+  background: rgba(92, 51, 23, 0.1);
+  border: 1px solid #5c3317;
+  border-left: 4px solid #5c3317;
+  color: #5c3317;
+  font-style: italic;
+}
+
+/* 38. 毛玻璃 - 彩色底 + 半透 */
+.style-frosted-glass {
+  background: linear-gradient(135deg, #7c3aed 0%, #ec4899 50%, #06b6d4 100%);
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+.style-frosted-glass article {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+.style-frosted-glass article h1 {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.style-frosted-glass article h2 {
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.style-frosted-glass article table {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+}
+.style-frosted-glass article table th {
+  background: rgba(255, 255, 255, 0.25);
+}
+.style-frosted-glass article blockquote {
+  background: rgba(255, 255, 255, 0.2);
+  border-left: 4px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0 8px 8px 0;
+}
+.style-frosted-glass article code {
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+
+/* 39. 金属质感 - 金银铜 */
+.style-metallic {
+  background: linear-gradient(135deg, #1a1a1a 0%, #4a4a4a 100%);
+  color: #d4af37;
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+.style-metallic::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, transparent 0%, transparent 30%, rgba(255, 255, 255, 0.05) 50%, transparent 70%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+.style-metallic article h1 {
+  background: linear-gradient(135deg, #d4af37 0%, #ffffff 50%, #d4af37 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.6rem;
+  text-align: center;
+  font-weight: 700;
+}
+.style-metallic article h2 {
+  color: #d4af37;
+  border-bottom: 1px solid #d4af37;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.style-metallic article blockquote {
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid #d4af37;
+  border-left: 4px solid #d4af37;
+  color: #d4af37;
+  font-style: italic;
+}
+.style-metallic article table th {
+  background: #d4af37;
+  color: #1a1a1a;
+}
+
+/* 40. 木纹 - 木材纹理 */
+.style-wood-grain {
+  background: #deb887;
+  color: #5c3317;
+  font-family: 'Georgia', serif;
+  font-weight: 500;
+}
+.style-wood-grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 12px,
+    rgba(92, 51, 23, 0.12) 12px,
+    rgba(92, 51, 23, 0.12) 14px,
+    transparent 14px,
+    transparent 28px,
+    rgba(92, 51, 23, 0.18) 28px,
+    rgba(92, 51, 23, 0.18) 30px
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+.style-wood-grain article {
+  background: rgba(255, 250, 240, 0.4);
+  padding: 2rem;
+  border-radius: 8px;
+}
+.style-wood-grain article h1 {
+  color: #5c3317;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.style-wood-grain article h2 {
+  color: #5c3317;
+  border-bottom: 3px double #5c3317;
+  font-weight: 600;
+}
+.style-wood-grain article blockquote {
+  background: rgba(92, 51, 23, 0.15);
+  border: 1px solid #5c3317;
+  border-left: 4px solid #5c3317;
+  color: #5c3317;
+}
+
+/* 41. 水波纹 - 蓝绿波纹 */
+.style-water-ripple {
+  background: linear-gradient(180deg, #4a90a4 0%, #a4c8e1 100%);
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+.style-water-ripple::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-radial-gradient(circle at 50% 50%, transparent 0, transparent 80px, rgba(255, 255, 255, 0.15) 80px, rgba(255, 255, 255, 0.15) 82px),
+    repeating-radial-gradient(circle at 30% 70%, transparent 0, transparent 60px, rgba(255, 255, 255, 0.1) 60px, rgba(255, 255, 255, 0.1) 62px),
+    repeating-radial-gradient(circle at 70% 30%, transparent 0, transparent 100px, rgba(255, 255, 255, 0.12) 100px, rgba(255, 255, 255, 0.12) 102px);
+  z-index: 1;
+  pointer-events: none;
+}
+.style-water-ripple article {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 2rem;
+}
+.style-water-ripple article h1 {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.style-water-ripple article h2 {
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+}
+.style-water-ripple article blockquote {
+  background: rgba(255, 255, 255, 0.2);
+  border-left: 4px solid #ffffff;
+  color: #ffffff;
+}
+
+/* 42. 织物 - 亚麻纹理 */
+.style-fabric {
+  background: #e8dcc0;
+  color: #1e3a8a;
+  font-family: 'Lora', 'Georgia', serif;
+  font-weight: 500;
+}
+.style-fabric::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(45deg, transparent 0, transparent 6px, rgba(30, 58, 138, 0.06) 6px, rgba(30, 58, 138, 0.06) 7px),
+    repeating-linear-gradient(-45deg, transparent 0, transparent 6px, rgba(30, 58, 138, 0.06) 6px, rgba(30, 58, 138, 0.06) 7px);
+  z-index: 1;
+  pointer-events: none;
+}
+.style-fabric article h1 {
+  color: #1e3a8a;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.style-fabric article h2 {
+  color: #a82d2d;
+  border-bottom: 2px dashed #1e3a8a;
+  font-weight: 600;
+}
+.style-fabric article blockquote {
+  background: rgba(30, 58, 138, 0.08);
+  border: 1px solid #1e3a8a;
+  border-left: 4px solid #a82d2d;
+  color: #1e3a8a;
+  font-style: italic;
+}
+
+/* =================================================================
+   七、现代趋势 (10 styles)
+   ================================================================= */
+
+/* 43. 现代科技 - 深色 + 渐变光晕 */
+.style-modern-tech {
+  background: linear-gradient(135deg, #0a1628 0%, #1e3a8a 50%, #0a1628 100%);
+  color: #ffffff;
+  font-family: 'Inter', 'SF Pro', sans-serif;
+  font-weight: 400;
+  position: relative;
+}
+.style-modern-tech::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 60%;
+  background: radial-gradient(ellipse at center, rgba(59, 130, 246, 0.4) 0%, transparent 70%);
+  filter: blur(40px);
+  z-index: 1;
+  pointer-events: none;
+}
+.style-modern-tech article {
+  background: rgba(10, 22, 40, 0.5);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+}
+.style-modern-tech article h1 {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.style-modern-tech article h2 {
+  color: #60a5fa;
+  border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+  font-weight: 600;
+}
+.style-modern-tech article table {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+.style-modern-tech article table th {
+  background: rgba(59, 130, 246, 0.2);
+  color: #60a5fa;
+  border-color: rgba(59, 130, 246, 0.3);
+}
+.style-modern-tech article blockquote {
+  background: rgba(59, 130, 246, 0.1);
+  border-left: 4px solid #3b82f6;
+  color: #cbd5e1;
+}
+.style-modern-tech article code {
+  background: rgba(59, 130, 246, 0.2);
+  color: #93c5fd;
+  font-family: 'JetBrains Mono', monospace;
+}
+.style-modern-tech article a {
+  color: #60a5fa;
+}
+
+/* 44. 编辑设计 - 杂志大字号 */
+.style-editorial {
+  background: #fafaf7;
+  color: #0a0a0a;
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #0a0a0a;
+  padding: 4rem 3rem;
+}
+.style-editorial article h1 {
+  color: #0a0a0a;
+  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+}
+.style-editorial article h2 {
+  color: #c43e3e;
+  border-bottom: 2px solid #0a0a0a;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.8rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+.style-editorial article blockquote {
+  background: none;
+  border-left: 6px solid #c43e3e;
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #0a0a0a;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* 45. 北欧极简 - 白底 + 柔和色 */
+.style-nordic {
+  background: #fafaf7;
+  color: #1a1a1a;
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+  border: 1px solid #e5e0d8;
+}
+.style-nordic article h1 {
+  color: #1a1a1a;
+  font-weight: 300;
+  font-size: 2.8rem;
+  letter-spacing: 0.05em;
+}
+.style-nordic article h2 {
+  color: #5a6a7a;
+  font-weight: 400;
+  border-bottom: 1px solid #c8d5e0;
+  letter-spacing: 0.05em;
+}
+.style-nordic article table th {
+  background: #c8d5e0;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+.style-nordic article blockquote {
+  background: #f5e6e0;
+  border-left: 4px solid #c8d5e0;
+  color: #5a4a4a;
+  font-style: italic;
+}
+
+/* 46. 暗色优先 - 暗主题 */
+.style-dark-first {
+  background: #0a0a0a;
+  color: #cbd5e1;
+  font-family: 'Inter', sans-serif;
+}
+.style-dark-first article h1 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 2.6rem;
+}
+.style-dark-first article h2 {
+  color: #60a5fa;
+  border-bottom: 1px solid #1f2937;
+  font-weight: 600;
+}
+.style-dark-first article table {
+  background: #111111;
+}
+.style-dark-first article table th {
+  background: #1f2937;
+  color: #60a5fa;
+}
+.style-dark-first article table td {
+  border-color: #1f2937;
+}
+.style-dark-first article blockquote {
+  background: #111111;
+  border-left: 4px solid #3b82f6;
+  color: #cbd5e1;
+}
+.style-dark-first article code {
+  background: #1f2937;
+  color: #93c5fd;
+}
+.style-dark-first article a {
+  color: #60a5fa;
+}
+
+/* 47. 野兽派 - 原始 + 冲突色 */
+.style-brutalism {
+  background: #ffff00;
+  color: #000000;
+  font-family: 'Times New Roman', 'Courier New', serif;
+  font-weight: 700;
+  border: 4px solid #000;
+  padding: 2rem;
+  transform: rotate(0.2deg);
+}
+.style-brutalism::before {
+  content: '';
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 80px;
+  height: 80px;
+  background: #ff00ff;
+  z-index: 1;
+}
+.style-brutalism article h1 {
+  color: #0000ff;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  font-size: 2.8rem;
+  font-family: 'Courier New', monospace;
+  text-transform: uppercase;
+}
+.style-brutalism article h2 {
+  color: #ff00ff;
+  border-bottom: 4px solid #000;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-family: 'Arial Black', sans-serif;
+}
+.style-brutalism article table {
+  background: #fff;
+  border: 2px solid #000;
+}
+.style-brutalism article table th {
+  background: #000;
+  color: #ffff00;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  border-color: #000;
+}
+.style-brutalism article table td {
+  border-color: #000;
+}
+.style-brutalism article blockquote {
+  background: #000;
+  color: #ffff00;
+  border: 2px solid #0000ff;
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+}
+.style-brutalism article a {
+  color: #ff00ff;
+  text-decoration: underline wavy #000;
+  font-weight: 700;
+}
+
+/* 48. 杂志风 - 大图 + 跨页 */
+.style-magazine {
+  background: #ffffff;
+  color: #0a0a0a;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-weight: 400;
+}
+.style-magazine article h1 {
+  color: #0a0a0a;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.style-magazine article h2 {
+  color: #0a0a0a;
+  border-top: 4px double #0a0a0a;
+  border-bottom: 4px double #0a0a0a;
+  padding: 0.8rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+}
+.style-magazine article blockquote {
+  background: #f5f5f5;
+  border: none;
+  border-top: 2px solid #0a0a0a;
+  border-bottom: 2px solid #0a0a0a;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+.style-magazine article table th {
+  background: #0a0a0a;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+}
+
+/* 49. 扁平化设计 - 纯色无渐变 */
+.style-flat-design {
+  background: #f5f5f5;
+  color: #1a1a1a;
+  font-family: 'Roboto', 'Inter', sans-serif;
+  font-weight: 400;
+  border: 3px solid #2196f3;
+}
+.style-flat-design article h1 {
+  color: #2196f3;
+  font-weight: 500;
+  font-size: 2.6rem;
+}
+.style-flat-design article h2 {
+  color: #f44336;
+  border-bottom: 4px solid #2196f3;
+  font-weight: 500;
+  text-transform: none;
+}
+.style-flat-design article table th {
+  background: #2196f3;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.05em;
+}
+.style-flat-design article table td {
+  border: 1px solid #e0e0e0;
+}
+.style-flat-design article blockquote {
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* 50. 材料设计 - 卡片阴影 */
+.style-material-design {
+  background: #f5f5f5;
+  color: #1a1a1a;
+  font-family: 'Roboto', 'Inter', sans-serif;
+  font-weight: 400;
+}
+.style-material-design article {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+.style-material-design article h1 {
+  color: #1976d2;
+  font-weight: 500;
+  font-size: 2.4rem;
+  letter-spacing: -0.01em;
+}
+.style-material-design article h2 {
+  color: #1976d2;
+  border-bottom: 2px solid #1976d2;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.style-material-design article table {
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+}
+.style-material-design article table th {
+  background: #1976d2;
+  color: white;
+  font-weight: 500;
+}
+.style-material-design article blockquote {
+  background: #e3f2fd;
+  border-left: 4px solid #1976d2;
+  color: #0d47a1;
+  border-radius: 0 4px 4px 0;
+}
+
+/* 51. 3D 插画 - 柔和立体 */
+.style-3d-illustration {
+  background: linear-gradient(135deg, #ffc1cc 0%, #a4c8e1 100%);
+  color: #2a2a4a;
+  font-family: 'Quicksand', 'Inter', sans-serif;
+  font-weight: 500;
+  border-radius: 24px;
+}
+.style-3d-illustration article h1 {
+  color: #2a2a4a;
+  font-weight: 700;
+  font-size: 2.8rem;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+.style-3d-illustration article h2 {
+  color: #4a3a6a;
+  border-bottom: 3px solid #ffffff;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+.style-3d-illustration article table th {
+  background: rgba(255, 255, 255, 0.6);
+  color: #2a2a4a;
+  font-weight: 600;
+  border-radius: 8px;
+}
+.style-3d-illustration article blockquote {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ffffff;
+  border-left: 4px solid #c43e6e;
+  color: #2a2a4a;
+  border-radius: 0 12px 12px 0;
+  backdrop-filter: blur(4px);
+}
+
+/* 52. 渐变网格 - 多色融合 */
+.style-gradient-mesh {
+  background:
+    radial-gradient(at 20% 30%, #8b5cf6 0%, transparent 50%),
+    radial-gradient(at 80% 20%, #ec4899 0%, transparent 50%),
+    radial-gradient(at 70% 80%, #06b6d4 0%, transparent 50%),
+    radial-gradient(at 30% 70%, #3b82f6 0%, transparent 50%),
+    #ffffff;
+  color: #1a1a1a;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+.style-gradient-mesh article {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.style-gradient-mesh article h1 {
+  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.style-gradient-mesh article h2 {
+  color: #8b5cf6;
+  border-bottom: 2px solid #ec4899;
+  font-weight: 700;
+}
+.style-gradient-mesh article blockquote {
+  background: rgba(139, 92, 246, 0.1);
+  border-left: 4px solid #8b5cf6;
+  color: #4a3a6a;
+  border-radius: 0 8px 8px 0;
+}

@@ -2,6 +2,7 @@
 title: 北欧极简 - Nordic
 sidebar_label: 北欧极简
 description: 源自斯堪的纳维亚设计的北欧极简,以白底 + 柔和粉彩 + 大量留白 + 自然光为标志,营造明亮、舒适、生活的氛围。...
+wrapperClassName: style-nordic
 ---
 
 # 北欧极简(Nordic)
@@ -57,4 +58,4 @@ description: 源自斯堪的纳维亚设计的北欧极简,以白底 + 柔和粉
 
 ## 相关风格
 
-浏览其他 **现代趋势** 分类下的设计风格,或查看完整 [风格目录](/styles)。
+浏览其他 **现代趋势** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。

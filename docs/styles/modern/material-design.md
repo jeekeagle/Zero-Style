@@ -2,6 +2,7 @@
 title: 材料设计 - Material Design
 sidebar_label: 材料设计
 description: 2014 年 Google 推出的设计系统,以"纸 + 阴影"隐喻构建 UI,通过 Z 轴层级与动态动效,规范化 Android 与 Web 视觉语言。...
+wrapperClassName: style-material-design
 ---
 
 # 材料设计(Material Design)
@@ -56,4 +57,4 @@ Roboto
 
 ## 相关风格
 
-浏览其他 **现代趋势** 分类下的设计风格,或查看完整 [风格目录](/styles)。
+浏览其他 **现代趋势** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。

@@ -2,6 +2,7 @@
 title: 衬线经典 - Serif Classic
 sidebar_label: 衬线经典
 description: 衬线体(Serif)在字母笔画末端有装饰性衬线,源自 15 世纪古腾堡印刷,代表传统、权威、可读性,常见于书籍、报刊、高端品牌。...
+wrapperClassName: style-serif-classic
 ---
 
 # 衬线经典(Serif Classic)
@@ -57,4 +58,4 @@ Times New Roman / Garamond / Playfair Display
 
 ## 相关风格
 
-浏览其他 **字体排版** 分类下的设计风格,或查看完整 [风格目录](/styles)。
+浏览其他 **字体排版** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。

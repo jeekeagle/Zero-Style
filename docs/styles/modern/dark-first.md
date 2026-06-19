@@ -2,6 +2,7 @@
 title: 暗色优先 - Dark First
 sidebar_label: 暗色优先
 description: 以暗色为默认主题的设计语言,通过减少光刺激、突出色彩对比,营造专业、专注、高级的氛围,是开发者工具和音乐产品的首选。...
+wrapperClassName: style-dark-first
 ---
 
 # 暗色优先(Dark First)
@@ -57,4 +58,4 @@ description: 以暗色为默认主题的设计语言,通过减少光刺激、突
 
 ## 相关风格
 
-浏览其他 **现代趋势** 分类下的设计风格,或查看完整 [风格目录](/styles)。
+浏览其他 **现代趋势** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。

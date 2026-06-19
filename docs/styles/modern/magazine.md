@@ -2,6 +2,7 @@
 title: 杂志风 - Magazine
 sidebar_label: 杂志风
 description: 模仿印刷杂志的网页设计,以封面级大图 + 跨页布局 + 多栏排版 + 强烈字号对比为标志,适合长篇阅读和品牌故事。...
+wrapperClassName: style-magazine
 ---
 
 # 杂志风(Magazine)
@@ -56,4 +57,4 @@ description: 模仿印刷杂志的网页设计,以封面级大图 + 跨页布局
 
 ## 相关风格
 
-浏览其他 **现代趋势** 分类下的设计风格,或查看完整 [风格目录](/styles)。
+浏览其他 **现代趋势** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。

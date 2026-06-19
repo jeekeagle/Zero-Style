@@ -2,6 +2,7 @@
 title: 编辑设计 - Editorial
 sidebar_label: 编辑设计
 description: 源自杂志编辑设计的网页风格,以大字号衬线 + 强烈对比 + 精致排版 + Bento 网格为标志,常用于品牌故事、个人作品集。...
+wrapperClassName: style-editorial
 ---
 
 # 编辑设计(Editorial)
@@ -56,4 +57,4 @@ description: 源自杂志编辑设计的网页风格,以大字号衬线 + 强烈
 
 ## 相关风格
 
-浏览其他 **现代趋势** 分类下的设计风格,或查看完整 [风格目录](/styles)。
+浏览其他 **现代趋势** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。

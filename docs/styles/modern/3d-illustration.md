@@ -2,6 +2,7 @@
 title: 3D 插画 - 3D Illustration
 sidebar_label: 3D 插画
 description: 2018 年后由 Spline、Blender 推动的 3D 插画,以柔和的色彩、夸张的造型、故事性场景成为 SaaS 与新消费品牌的视觉新语言。...
+wrapperClassName: style-3d-illustration
 ---
 
 # 3D 插画(3D Illustration)
@@ -57,4 +58,4 @@ description: 2018 年后由 Spline、Blender 推动的 3D 插画,以柔和的色
 
 ## 相关风格
 
-浏览其他 **现代趋势** 分类下的设计风格,或查看完整 [风格目录](/styles)。
+浏览其他 **现代趋势** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。

@@ -2,6 +2,7 @@
 title: 马卡龙 - Macaron
 sidebar_label: 马卡龙
 description: 源于法国马卡龙甜品的高明度低饱和色彩,以柔和的粉、薄荷绿、薰衣草紫等组合,营造甜美、少女、清新的视觉氛围。...
+wrapperClassName: style-macaron
 ---
 
 # 马卡龙(Macaron)
@@ -56,4 +57,4 @@ description: 源于法国马卡龙甜品的高明度低饱和色彩,以柔和的
 
 ## 相关风格
 
-浏览其他 **配色方案** 分类下的设计风格,或查看完整 [风格目录](/styles)。
+浏览其他 **配色方案** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
