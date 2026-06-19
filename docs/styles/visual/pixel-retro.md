@@ -2,8 +2,9 @@
 title: 像素复古 - Pixel Retro
 sidebar_label: 像素复古
 description: 8-bit/16-bit 时代游戏机的视觉遗产,以像素为单位绘制、限定调色板(8/16/64 色)、黑色硬边描边,塑造出鲜明的怀旧感。...
-wrapperClassName: style-pixel-retro
 ---
+
+<div class="style-pixel-retro">
 
 # 像素复古(Pixel Retro)
 
@@ -59,3 +60,5 @@ wrapperClassName: style-pixel-retro
 ## 相关风格
 
 浏览其他 **视觉表现** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

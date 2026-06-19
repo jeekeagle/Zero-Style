@@ -2,8 +2,9 @@
 title: 野兽派 - Brutalism
 sidebar_label: 野兽派
 description: Web 上的野兽派(Brutalist Web)反对精致的商业化设计,以默认字体、原始 HTML 感、不对齐、冲突色彩为标志,体现"原始诚实"。...
-wrapperClassName: style-brutalism
 ---
+
+<div class="style-brutalism">
 
 # 野兽派(Brutalism)
 
@@ -58,3 +59,5 @@ Web 上的野兽派(Brutalist Web)反对精致的商业化设计,以默认字体
 ## 相关风格
 
 浏览其他 **现代趋势** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

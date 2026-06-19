@@ -2,8 +2,9 @@
 title: 渐变网格 - Gradient Mesh
 sidebar_label: 渐变网格
 description: 渐变网格以多个色彩控制点模拟摄影般的色彩过渡,从 Figma/Apple 推动后成为现代 UI 与品牌设计的主流语言。...
-wrapperClassName: style-gradient-mesh
 ---
+
+<div class="style-gradient-mesh">
 
 # 渐变网格(Gradient Mesh)
 
@@ -59,3 +60,5 @@ wrapperClassName: style-gradient-mesh
 ## 相关风格
 
 浏览其他 **现代趋势** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

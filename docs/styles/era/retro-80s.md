@@ -2,8 +2,9 @@
 title: 80年代复古 - Retro 80s
 sidebar_label: 80年代复古
 description: 1980 年代是 MTV、合成器、Walkman 的时代,设计以霓虹渐变、网格透视、磁带/录像带元素、合成波字体为标志。...
-wrapperClassName: style-retro-80s
 ---
+
+<div class="style-retro-80s">
 
 # 80年代复古(Retro 80s)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-retro-80s
 ## 相关风格
 
 浏览其他 **时代年代** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

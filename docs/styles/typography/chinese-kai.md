@@ -2,8 +2,9 @@
 title: 汉字楷书 - Chinese Kai
 sidebar_label: 汉字楷书
 description: 楷书起源于汉魏,以端正工整、笔画清晰为特点,是中文印刷与书法的基础字体,代表庄重、文化、可读性。...
-wrapperClassName: style-chinese-kai
 ---
+
+<div class="style-chinese-kai">
 
 # 汉字楷书(Chinese Kai)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-chinese-kai
 ## 相关风格
 
 浏览其他 **字体排版** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

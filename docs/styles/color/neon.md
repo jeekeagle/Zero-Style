@@ -2,8 +2,9 @@
 title: 霓虹荧光 - Neon
 sidebar_label: 霓虹荧光
 description: 高饱和度的荧光色(电光粉/霓虹绿/电子紫),在暗色背景上发光,源自 80 年代夜店与赛博朋克美学,极富活力与未来感。...
-wrapperClassName: style-neon
 ---
+
+<div class="style-neon">
 
 # 霓虹荧光(Neon)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-neon
 ## 相关风格
 
 浏览其他 **配色方案** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

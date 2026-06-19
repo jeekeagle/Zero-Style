@@ -2,8 +2,9 @@
 title: 70年代迪斯科 - Disco 70s
 sidebar_label: 70年代迪斯科
 description: 1970 年代迪斯科文化的视觉呈现,以镜面球、霓虹条、棕橙暖色、曲线字体为代表,传递享乐、派对、自由的氛围。...
-wrapperClassName: style-disco-70s
 ---
+
+<div class="style-disco-70s">
 
 # 70年代迪斯科(Disco 70s)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-disco-70s
 ## 相关风格
 
 浏览其他 **时代年代** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

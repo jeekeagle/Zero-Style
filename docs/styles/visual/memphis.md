@@ -2,8 +2,9 @@
 title: 孟菲斯 - Memphis
 sidebar_label: 孟菲斯
 description: 1981 年由意大利设计师 Ettore Sottsass 在米兰创立的孟菲斯设计集团,以鲜艳撞色、几何图形、错位构图挑战现代主义的严肃性。它是后现代主义的视觉...
-wrapperClassName: style-memphis
 ---
+
+<div class="style-memphis">
 
 # 孟菲斯(Memphis)
 
@@ -61,3 +62,5 @@ wrapperClassName: style-memphis
 ## 相关风格
 
 浏览其他 **视觉表现** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

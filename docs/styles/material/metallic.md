@@ -2,8 +2,9 @@
 title: 金属质感 - Metallic
 sidebar_label: 金属质感
 description: 金属质感通过渐变 + 高光 + 阴影模拟金/银/铜/铬的反射,营造奢华、未来、科技感,常用于高端品牌和游戏 UI。...
-wrapperClassName: style-metallic
 ---
+
+<div class="style-metallic">
 
 # 金属质感(Metallic)
 
@@ -59,3 +60,5 @@ wrapperClassName: style-metallic
 ## 相关风格
 
 浏览其他 **材质纹理** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

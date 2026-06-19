@@ -2,8 +2,9 @@
 title: 蒸汽波 - Vaporwave
 sidebar_label: 蒸汽波
 description: 2010 年前后在互联网诞生的美学运动,讽刺性怀旧 80/90 年代消费主义,以紫粉渐变、透视网格、希腊雕塑、复古 Windows 截图为核心元素。...
-wrapperClassName: style-vaporwave
 ---
+
+<div class="style-vaporwave">
 
 # 蒸汽波(Vaporwave)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-vaporwave
 ## 相关风格
 
 浏览其他 **视觉表现** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

@@ -2,8 +2,9 @@
 title: 纸张纹理 - Paper Texture
 sidebar_label: 纸张纹理
 description: 通过模拟纸张的纹理(粗糙/颗粒/折痕/水渍),增加触觉感与真实感,是高端品牌、文创产品、有机品牌的常用手法。...
-wrapperClassName: style-paper-texture
 ---
+
+<div class="style-paper-texture">
 
 # 纸张纹理(Paper Texture)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-paper-texture
 ## 相关风格
 
 浏览其他 **材质纹理** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

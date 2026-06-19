@@ -2,8 +2,9 @@
 title: 莫兰迪 - Morandi
 sidebar_label: 莫兰迪
 description: 源自意大利画家 Giorgio Morandi 的静物画色调,以低饱和度的灰调色彩(灰粉/灰蓝/灰绿)营造温柔、宁静、有距离感的氛围。...
-wrapperClassName: style-morandi
 ---
+
+<div class="style-morandi">
 
 # 莫兰迪(Morandi)
 
@@ -59,3 +60,5 @@ wrapperClassName: style-morandi
 ## 相关风格
 
 浏览其他 **配色方案** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

@@ -2,8 +2,9 @@
 title: 青花瓷 - Blue-White Porcelain
 sidebar_label: 青花瓷
 description: 元代成熟的青花瓷,以钴蓝在白胎上绘画,经高温烧制形成白底蓝花的经典样式,后经丝绸之路远播欧洲,影响深远。...
-wrapperClassName: style-blue-white-porcelain
 ---
+
+<div class="style-blue-white-porcelain">
 
 # 青花瓷(Blue-White Porcelain)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-blue-white-porcelain
 ## 相关风格
 
 浏览其他 **东方古典** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

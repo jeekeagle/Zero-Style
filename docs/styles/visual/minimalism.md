@@ -2,8 +2,9 @@
 title: 极简主义 - Minimalism
 sidebar_label: 极简主义
 description: 极简主义起源于 20 世纪中期的视觉艺术运动,以"少即是多"为核心,通过去除一切非必要元素,让形式、内容、空间本身说话。在 UI 设计中表现为大量留白、克制的配...
-wrapperClassName: style-minimalism
 ---
+
+<div class="style-minimalism">
 
 # 极简主义(Minimalism)
 
@@ -61,3 +62,5 @@ wrapperClassName: style-minimalism
 ## 相关风格
 
 浏览其他 **视觉表现** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

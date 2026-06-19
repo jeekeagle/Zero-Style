@@ -2,8 +2,9 @@
 title: 现代科技 - Modern Tech
 sidebar_label: 现代科技
 description: 2020 年代科技产品的视觉语言,以深色背景 + 渐变光晕 + 等宽字体 + 几何图形营造专业、前沿、神秘的氛围。...
-wrapperClassName: style-modern-tech
 ---
+
+<div class="style-modern-tech">
 
 # 现代科技(Modern Tech)
 
@@ -59,3 +60,5 @@ Inter / SF Pro + JetBrains Mono
 ## 相关风格
 
 浏览其他 **现代趋势** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

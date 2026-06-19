@@ -2,8 +2,9 @@
 title: 手写体 - Hand Written
 sidebar_label: 手写体
 description: 手写体强调"人手"的痕迹,从优雅的铜版手写体(Copperplate)到随意的马克笔手写,传达个性、温度、亲密感。...
-wrapperClassName: style-hand-written
 ---
+
+<div class="style-hand-written">
 
 # 手写体(Hand Written)
 
@@ -57,3 +58,5 @@ Caveat / Pacifico / Sacramento / 中文手写
 ## 相关风格
 
 浏览其他 **字体排版** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

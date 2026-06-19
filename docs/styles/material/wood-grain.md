@@ -2,8 +2,9 @@
 title: 木纹质感 - Wood Grain
 sidebar_label: 木纹质感
 description: 木纹质感模拟天然木材的纹理与色调,传达自然、温暖、可靠、手作感,常见于家居、咖啡、手工艺品牌。...
-wrapperClassName: style-wood-grain
 ---
+
+<div class="style-wood-grain">
 
 # 木纹质感(Wood Grain)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-wood-grain
 ## 相关风格
 
 浏览其他 **材质纹理** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

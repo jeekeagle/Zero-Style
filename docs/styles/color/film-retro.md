@@ -2,8 +2,9 @@
 title: 复古胶片 - Film Retro
 sidebar_label: 复古胶片
 description: 模仿 70 年代柯达/富士胶片的色调,以暖黄/橙红阴影、颗粒感、暗角为标志,营造怀旧、温柔、有故事感的氛围。...
-wrapperClassName: style-film-retro
 ---
+
+<div class="style-film-retro">
 
 # 复古胶片(Film Retro)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-film-retro
 ## 相关风格
 
 浏览其他 **配色方案** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

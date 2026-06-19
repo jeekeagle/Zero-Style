@@ -13,19 +13,19 @@
   overflow: hidden;
 }
 
-[class*="style-"] article {
+[class*="style-"] {
   position: relative;
   z-index: 2;
 }
 
-[class*="style-"] article h1 {
+[class*="style-"] h1 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
   letter-spacing: 0.04em;
 }
 
-[class*="style-"] article h2 {
+[class*="style-"] h2 {
   font-size: 1.6rem;
   font-weight: 600;
   margin: 2.5rem 0 1rem;
@@ -35,12 +35,12 @@
   opacity: 0.85;
 }
 
-[class*="style-"] article p,
-[class*="style-"] article li {
+[class*="style-"] p,
+[class*="style-"] li {
   line-height: 1.8;
 }
 
-[class*="style-"] article blockquote {
+[class*="style-"] blockquote {
   border-left: 4px solid currentColor;
   background: rgba(0, 0, 0, 0.06);
   padding: 1rem 1.5rem;
@@ -49,7 +49,7 @@
   margin: 1.5rem 0;
 }
 
-[class*="style-"] article table {
+[class*="style-"] table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
@@ -59,20 +59,20 @@
   font-size: 0.95em;
 }
 
-[class*="style-"] article table th,
-[class*="style-"] article table td {
+[class*="style-"] table th,
+[class*="style-"] table td {
   padding: 0.7rem 1rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-[class*="style-"] article code {
+[class*="style-"] code {
   padding: 0.15rem 0.4rem;
   border-radius: 4px;
   font-size: 0.9em;
   background: rgba(0, 0, 0, 0.08);
 }
 
-[class*="style-"] article hr {
+[class*="style-"] hr {
   border: 0;
   height: 2px;
   background: currentColor;
@@ -108,13 +108,13 @@
   z-index: 1;
   opacity: 0.1;
 }
-.style-minimalism article h1 {
+.style-minimalism h1 {
   font-weight: 200;
   text-align: center;
   font-size: 3rem;
   letter-spacing: 0.1em;
 }
-.style-minimalism article h2 {
+.style-minimalism h2 {
   font-weight: 300;
   text-align: center;
   border: none;
@@ -122,7 +122,7 @@
   text-transform: uppercase;
   font-size: 0.9rem;
 }
-.style-minimalism article blockquote {
+.style-minimalism blockquote {
   text-align: center;
   border: none;
   background: none;
@@ -159,7 +159,7 @@
   transform: rotate(12deg);
   z-index: 1;
 }
-.style-memphis article h1 {
+.style-memphis h1 {
   background: #ff6b9d;
   color: white;
   display: inline-block;
@@ -167,14 +167,14 @@
   transform: rotate(-2deg);
   font-size: 2.4rem;
 }
-.style-memphis article h2 {
+.style-memphis h2 {
   border-bottom: 4px solid #000;
   background: #4d96ff;
   color: white;
   padding: 0.5rem 1rem;
   display: inline-block;
 }
-.style-memphis article blockquote {
+.style-memphis blockquote {
   background: #000;
   color: #ffd93d;
   border-left: 8px solid #ff6b9d;
@@ -189,21 +189,21 @@
   box-shadow: inset 12px 12px 24px #a3b1c6, inset -12px -12px 24px #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.style-neumorphism article h1 {
+.style-neumorphism h1 {
   color: #2a3a52;
   text-shadow: 2px 2px 4px rgba(163, 177, 198, 0.5), -1px -1px 2px rgba(255, 255, 255, 0.8);
   font-weight: 600;
 }
-.style-neumorphism article h2 {
+.style-neumorphism h2 {
   color: #5a6c8a;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
   border-bottom: 1px solid #c8d0de;
 }
-.style-neumorphism article table {
+.style-neumorphism table {
   background: #e0e5ec;
   box-shadow: 4px 4px 8px #a3b1c6, -4px -4px 8px #ffffff;
 }
-.style-neumorphism article blockquote {
+.style-neumorphism blockquote {
   background: #e0e5ec;
   color: #5a6c8a;
   border-left: 4px solid #a3b1c6;
@@ -225,7 +225,7 @@
     radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.2), transparent 40%);
   z-index: 1;
 }
-.style-glassmorphism article {
+.style-glassmorphism {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -234,24 +234,24 @@
   padding: 2rem 2.5rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
-.style-glassmorphism article h1 {
+.style-glassmorphism h1 {
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
-.style-glassmorphism article h2 {
+.style-glassmorphism h2 {
   border-bottom-color: rgba(255, 255, 255, 0.4);
 }
-.style-glassmorphism article table {
+.style-glassmorphism table {
   background: rgba(255, 255, 255, 0.1);
 }
-.style-glassmorphism article table th {
+.style-glassmorphism table th {
   background: rgba(255, 255, 255, 0.2);
 }
-.style-glassmorphism article blockquote {
+.style-glassmorphism blockquote {
   background: rgba(255, 255, 255, 0.15);
   border-left-color: rgba(255, 255, 255, 0.6);
   color: #fff;
 }
-.style-glassmorphism article code {
+.style-glassmorphism code {
   background: rgba(0, 0, 0, 0.2);
   color: #fff;
 }
@@ -273,38 +273,38 @@
   pointer-events: none;
   z-index: 1;
 }
-.style-cyberpunk article h1 {
+.style-cyberpunk h1 {
   color: #ff006e;
   text-shadow: 2px 0 #00f5ff, -2px 0 #00f5ff, 0 0 20px rgba(255, 0, 110, 0.5);
   font-weight: 900;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
-.style-cyberpunk article h2 {
+.style-cyberpunk h2 {
   color: #00f5ff;
   text-shadow: 0 0 8px #00f5ff;
   border-bottom: 1px dashed #ff006e;
 }
-.style-cyberpunk article blockquote {
+.style-cyberpunk blockquote {
   background: rgba(255, 0, 110, 0.15);
   border-left: 4px solid #ff006e;
   color: #00f5ff;
   text-shadow: 0 0 4px #00f5ff;
 }
-.style-cyberpunk article code {
+.style-cyberpunk code {
   background: #1a0a14;
   color: #ff006e;
   border: 1px solid #ff006e;
 }
-.style-cyberpunk article table {
+.style-cyberpunk table {
   background: #0a0a0a;
   border: 1px solid #00f5ff;
 }
-.style-cyberpunk article table th {
+.style-cyberpunk table th {
   background: #1a0a14;
   color: #ff006e;
 }
-.style-cyberpunk article a {
+.style-cyberpunk a {
   color: #00f5ff;
   text-decoration: underline;
   text-decoration-style: wavy;
@@ -332,14 +332,14 @@
   -webkit-mask-image: linear-gradient(0deg, black 30%, transparent 100%);
   z-index: 1;
 }
-.style-vaporwave article h1 {
+.style-vaporwave h1 {
   font-weight: 900;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #ec4899;
   text-shadow: 3px 3px 0 #06b6d4, 6px 6px 0 #1a0b2e;
 }
-.style-vaporwave article h2 {
+.style-vaporwave h2 {
   color: #a855f7;
   border-bottom: 2px solid #ec4899;
   text-shadow: 0 0 8px rgba(168, 85, 247, 0.6);
@@ -355,39 +355,39 @@
   letter-spacing: 0.05em;
   line-height: 1.9;
 }
-.style-pixel-retro article h1 {
+.style-pixel-retro h1 {
   color: #fcbf49;
   text-shadow: 3px 3px 0 #d62828;
   font-size: 2rem;
   letter-spacing: 0.1em;
 }
-.style-pixel-retro article h2 {
+.style-pixel-retro h2 {
   color: #f77f00;
   border-bottom: 4px solid #d62828;
   font-size: 1.1rem;
   text-transform: uppercase;
 }
-.style-pixel-retro article table {
+.style-pixel-retro table {
   background: #003049;
   border: 2px solid #fcbf49;
 }
-.style-pixel-retro article table th {
+.style-pixel-retro table th {
   background: #d62828;
   color: #fff;
 }
-.style-pixel-retro article blockquote {
+.style-pixel-retro blockquote {
   background: #000;
   border: 3px solid #fcbf49;
   border-left: 6px solid #d62828;
   color: #fcbf49;
 }
-.style-pixel-retro article code {
+.style-pixel-retro code {
   background: #d62828;
   color: #fff;
   font-family: 'Press Start 2P', monospace;
   font-size: 0.7em;
 }
-.style-pixel-retro article a {
+.style-pixel-retro a {
   color: #f77f00;
   text-decoration: underline;
 }
@@ -411,7 +411,7 @@
   z-index: 1;
   pointer-events: none;
 }
-.style-swiss-design article h1 {
+.style-swiss-design h1 {
   font-weight: 700;
   font-size: 2.8rem;
   letter-spacing: -0.02em;
@@ -420,7 +420,7 @@
   border-left: 12px solid #e30613;
   padding-left: 1rem;
 }
-.style-swiss-design article h2 {
+.style-swiss-design h2 {
   font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: 0.1em;
@@ -428,14 +428,14 @@
   border-bottom: 2px solid #e30613;
   color: #000;
 }
-.style-swiss-design article table th {
+.style-swiss-design table th {
   background: #e30613;
   color: white;
   text-transform: uppercase;
   font-size: 0.85em;
   letter-spacing: 0.08em;
 }
-.style-swiss-design article blockquote {
+.style-swiss-design blockquote {
   background: #f5f5f5;
   border-left: 4px solid #e30613;
   font-weight: 500;
@@ -471,20 +471,20 @@
   border-bottom: 100px solid #1d3557;
   z-index: 1;
 }
-.style-bauhaus article h1 {
+.style-bauhaus h1 {
   color: #e63946;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: 900;
 }
-.style-bauhaus article h2 {
+.style-bauhaus h2 {
   color: #1d3557;
   border-bottom: 4px solid #f1c40f;
   text-transform: uppercase;
   font-size: 1.4rem;
   letter-spacing: 0.08em;
 }
-.style-bauhaus article blockquote {
+.style-bauhaus blockquote {
   background: #1d3557;
   color: #f5e8c7;
   border-left: 6px solid #e63946;
@@ -512,7 +512,7 @@
   z-index: 1;
   pointer-events: none;
 }
-.style-art-deco article h1 {
+.style-art-deco h1 {
   color: #d4af37;
   font-size: 2.6rem;
   text-align: center;
@@ -520,7 +520,7 @@
   letter-spacing: 0.15em;
   text-shadow: 0 2px 8px rgba(212, 175, 55, 0.5);
 }
-.style-art-deco article h2 {
+.style-art-deco h2 {
   color: #d4af37;
   border-bottom: 1px solid #d4af37;
   text-align: center;
@@ -528,7 +528,7 @@
   letter-spacing: 0.2em;
   font-size: 1.2rem;
 }
-.style-art-deco article blockquote {
+.style-art-deco blockquote {
   background: rgba(212, 175, 55, 0.1);
   border: 1px solid #d4af37;
   border-left: 4px solid #d4af37;
@@ -579,23 +579,23 @@
   font-family: 'KaiTi', serif;
   z-index: 3;
 }
-.style-chinese-ink article h1 {
+.style-chinese-ink h1 {
   color: #1a1a1a;
   font-weight: 700;
   letter-spacing: 0.2em;
 }
-.style-chinese-ink article h2 {
+.style-chinese-ink h2 {
   color: #1a1a1a;
   border-bottom: 1px solid #1a1a1a;
   font-weight: 700;
   letter-spacing: 0.15em;
 }
-.style-chinese-ink article blockquote {
+.style-chinese-ink blockquote {
   background: rgba(26, 26, 26, 0.05);
   border-left: 4px solid #1a1a1a;
   font-style: italic;
 }
-.style-chinese-ink article table th {
+.style-chinese-ink table th {
   background: #1a1a1a;
   color: #f5e8c7;
 }
@@ -625,17 +625,17 @@
   z-index: 1;
   opacity: 0.7;
 }
-.style-japanese-zen article {
+.style-japanese-zen {
   background: rgba(245, 240, 232, 0.7);
 }
-.style-japanese-zen article h1 {
+.style-japanese-zen h1 {
   text-align: center;
   font-weight: 300;
   letter-spacing: 0.3em;
   font-size: 2.2rem;
   color: #1a1a1a;
 }
-.style-japanese-zen article h2 {
+.style-japanese-zen h2 {
   text-align: center;
   font-weight: 300;
   border: none;
@@ -644,7 +644,7 @@
   text-transform: none;
   font-size: 1.1rem;
 }
-.style-japanese-zen article blockquote {
+.style-japanese-zen blockquote {
   text-align: center;
   border: none;
   background: none;
@@ -669,19 +669,19 @@
   background: #1a1a1a;
   z-index: 1;
 }
-.style-ukiyo-e article h1 {
+.style-ukiyo-e h1 {
   color: #c0392b;
   font-size: 2.4rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-shadow: 1px 1px 0 #d4af37;
 }
-.style-ukiyo-e article h2 {
+.style-ukiyo-e h2 {
   color: #1f3a93;
   border-bottom: 3px double #c0392b;
   font-weight: 700;
 }
-.style-ukiyo-e article blockquote {
+.style-ukiyo-e blockquote {
   background: #c0392b;
   color: #f5e8c7;
   border: 2px solid #1a1a1a;
@@ -710,20 +710,20 @@
   pointer-events: none;
   opacity: 0.5;
 }
-.style-arabic-geometric article h1 {
+.style-arabic-geometric h1 {
   text-align: center;
   color: #d4af37;
   font-size: 2.6rem;
   letter-spacing: 0.15em;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
-.style-arabic-geometric article h2 {
+.style-arabic-geometric h2 {
   color: #d4af37;
   border-bottom: 1px solid #d4af37;
   text-align: center;
   letter-spacing: 0.2em;
 }
-.style-arabic-geometric article blockquote {
+.style-arabic-geometric blockquote {
   background: rgba(212, 175, 55, 0.15);
   border: 1px solid #d4af37;
   border-left: 4px solid #d4af37;
@@ -755,19 +755,19 @@
   opacity: 0.3;
   pointer-events: none;
 }
-.style-indian-mehndi article h1 {
+.style-indian-mehndi h1 {
   color: #c0392b;
   text-align: center;
   font-weight: 700;
   letter-spacing: 0.05em;
 }
-.style-indian-mehndi article h2 {
+.style-indian-mehndi h2 {
   color: #8b4513;
   border-bottom: 2px dotted #8b4513;
   text-align: center;
   font-style: italic;
 }
-.style-indian-mehndi article blockquote {
+.style-indian-mehndi blockquote {
   background: rgba(139, 69, 19, 0.1);
   border: 2px solid #8b4513;
   border-left: 6px solid #c0392b;
@@ -793,7 +793,7 @@
   z-index: 1;
   pointer-events: none;
 }
-.style-tang-pattern article h1 {
+.style-tang-pattern h1 {
   color: #d4af37;
   text-align: center;
   font-size: 2.6rem;
@@ -801,20 +801,20 @@
   letter-spacing: 0.3em;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
-.style-tang-pattern article h2 {
+.style-tang-pattern h2 {
   color: #d4af37;
   border-bottom: 1px solid #d4af37;
   text-align: center;
   letter-spacing: 0.2em;
   font-weight: 600;
 }
-.style-tang-pattern article blockquote {
+.style-tang-pattern blockquote {
   background: rgba(212, 175, 55, 0.1);
   border: 1px solid #d4af37;
   border-left: 4px solid #d4af37;
   color: #d4af37;
 }
-.style-tang-pattern article code {
+.style-tang-pattern code {
   background: rgba(212, 175, 55, 0.15);
   color: #d4af37;
 }
@@ -834,7 +834,7 @@
   pointer-events: none;
   z-index: 1;
 }
-.style-blue-white-porcelain article h1 {
+.style-blue-white-porcelain h1 {
   color: #1e3a8a;
   text-align: center;
   font-weight: 700;
@@ -842,22 +842,22 @@
   border-bottom: 2px double #1e3a8a;
   padding-bottom: 0.8rem;
 }
-.style-blue-white-porcelain article h2 {
+.style-blue-white-porcelain h2 {
   color: #1e3a8a;
   border-bottom: 1px solid #1e3a8a;
   text-align: center;
   letter-spacing: 0.15em;
   font-weight: 600;
 }
-.style-blue-white-porcelain article table {
+.style-blue-white-porcelain table {
   background: #f5f5f0;
   border: 1px solid #1e3a8a;
 }
-.style-blue-white-porcelain article table th {
+.style-blue-white-porcelain table th {
   background: #1e3a8a;
   color: #f5f5f0;
 }
-.style-blue-white-porcelain article blockquote {
+.style-blue-white-porcelain blockquote {
   background: rgba(30, 58, 138, 0.05);
   border: 1px solid #1e3a8a;
   border-left: 4px solid #1e3a8a;
@@ -874,21 +874,21 @@
   color: #3a3a3a;
   font-family: 'Georgia', 'Times New Roman', serif;
 }
-.style-morandi article h1 {
+.style-morandi h1 {
   color: #5a5a5a;
   font-weight: 500;
   letter-spacing: 0.05em;
 }
-.style-morandi article h2 {
+.style-morandi h2 {
   color: #6a6a6a;
   border-bottom: 1px solid #b5a8a0;
   font-weight: 400;
 }
-.style-morandi article table th {
+.style-morandi table th {
   background: #a8b8c8;
   color: #2a3a4a;
 }
-.style-morandi article blockquote {
+.style-morandi blockquote {
   background: rgba(168, 184, 200, 0.2);
   border-left: 4px solid #a8b8c8;
   color: #4a4a4a;
@@ -903,19 +903,19 @@
   font-weight: 500;
   border-radius: 20px;
 }
-.style-macaron article h1 {
+.style-macaron h1 {
   color: #c43e6e;
   font-weight: 700;
 }
-.style-macaron article h2 {
+.style-macaron h2 {
   color: #5a8a8a;
   border-bottom: 2px solid #ffd1dc;
 }
-.style-macaron article table th {
+.style-macaron table th {
   background: #ffd1dc;
   color: #5a3a4a;
 }
-.style-macaron article blockquote {
+.style-macaron blockquote {
   background: rgba(255, 209, 220, 0.4);
   border-left: 4px solid #e0a8c0;
   color: #5a3a4a;
@@ -929,20 +929,20 @@
   font-family: 'Lora', 'Georgia', serif;
   font-weight: 500;
 }
-.style-earth-tone article h1 {
+.style-earth-tone h1 {
   color: #f5e8d0;
   font-weight: 700;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
-.style-earth-tone article h2 {
+.style-earth-tone h2 {
   color: #f5e8d0;
   border-bottom: 1px solid rgba(245, 232, 208, 0.5);
 }
-.style-earth-tone article table th {
+.style-earth-tone table th {
   background: rgba(0, 0, 0, 0.3);
   color: #f5e8d0;
 }
-.style-earth-tone article blockquote {
+.style-earth-tone blockquote {
   background: rgba(0, 0, 0, 0.2);
   border-left: 4px solid #f5e8d0;
   color: #f5e8d0;
@@ -957,32 +957,32 @@
   letter-spacing: 0.05em;
   text-shadow: 0 0 4px currentColor;
 }
-.style-neon article h1 {
+.style-neon h1 {
   color: #ff10f0;
   font-size: 2.6rem;
   text-shadow: 0 0 12px #ff10f0, 0 0 24px #ff10f0, 0 0 36px #bc13fe;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
-.style-neon article h2 {
+.style-neon h2 {
   color: #39ff14;
   border-bottom: 2px solid #39ff14;
   text-shadow: 0 0 8px #39ff14;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
-.style-neon article blockquote {
+.style-neon blockquote {
   background: rgba(57, 255, 20, 0.1);
   border: 1px solid #39ff14;
   border-left: 4px solid #ff10f0;
   color: #39ff14;
 }
-.style-neon article code {
+.style-neon code {
   background: #bc13fe;
   color: #0a0a0a;
   text-shadow: none;
 }
-.style-neon article a {
+.style-neon a {
   color: #ff10f0;
   text-decoration: underline wavy;
   text-shadow: 0 0 4px #ff10f0;
@@ -994,22 +994,22 @@
   color: #1a1a1a;
   font-family: 'Helvetica Neue', sans-serif;
 }
-.style-monochrome article {
+.style-monochrome {
   background: rgba(255, 255, 255, 0.92);
   padding: 2rem 2.5rem;
   border-radius: 12px;
   margin: 1rem;
 }
-.style-monochrome article h1 {
+.style-monochrome h1 {
   color: #0a1628;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
-.style-monochrome article h2 {
+.style-monochrome h2 {
   color: #1e3a8a;
   border-bottom: 2px solid #1e3a8a;
 }
-.style-monochrome article blockquote {
+.style-monochrome blockquote {
   background: #f0f4fa;
   border-left: 4px solid #1e3a8a;
   color: #1e3a8a;
@@ -1045,7 +1045,7 @@
   mix-blend-mode: multiply;
   opacity: 0.5;
 }
-.style-film-retro article h1 {
+.style-film-retro h1 {
   color: #5b8fa8;
   text-align: center;
   font-weight: 700;
@@ -1053,14 +1053,14 @@
   text-transform: uppercase;
   font-size: 2.2rem;
 }
-.style-film-retro article h2 {
+.style-film-retro h2 {
   color: #c87856;
   border-bottom: 1px dashed #5b8fa8;
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-.style-film-retro article blockquote {
+.style-film-retro blockquote {
   background: rgba(91, 143, 168, 0.15);
   border: 1px solid #5b8fa8;
   border-left: 4px solid #c87856;
@@ -1075,23 +1075,23 @@
   font-family: 'Quicksand', 'PingFang SC', sans-serif;
   font-weight: 500;
 }
-.style-pastel article h1 {
+.style-pastel h1 {
   text-align: center;
   color: #c43e6e;
   font-weight: 600;
   letter-spacing: 0.05em;
 }
-.style-pastel article h2 {
+.style-pastel h2 {
   color: #6a8aaa;
   border-bottom: 2px dotted #ffb3ba;
   font-weight: 500;
   letter-spacing: 0.05em;
 }
-.style-pastel article table th {
+.style-pastel table th {
   background: #ffb3ba;
   color: #4a3a4a;
 }
-.style-pastel article blockquote {
+.style-pastel blockquote {
   background: rgba(255, 255, 255, 0.5);
   border-left: 4px solid #b5ead7;
   color: #4a3a4a;
@@ -1115,7 +1115,7 @@
   margin-left: auto;
   margin-right: auto;
 }
-.style-serif-classic article h1 {
+.style-serif-classic h1 {
   text-align: center;
   font-weight: 700;
   font-style: italic;
@@ -1123,7 +1123,7 @@
   letter-spacing: 0.05em;
   color: #1a1a1a;
 }
-.style-serif-classic article h2 {
+.style-serif-classic h2 {
   text-align: center;
   font-style: italic;
   border: none;
@@ -1132,7 +1132,7 @@
   letter-spacing: 0.1em;
   font-size: 1.3rem;
 }
-.style-serif-classic article blockquote {
+.style-serif-classic blockquote {
   text-align: center;
   font-style: italic;
   border: none;
@@ -1140,11 +1140,11 @@
   font-size: 1.15rem;
   color: #5a4a3a;
 }
-.style-serif-classic article table {
+.style-serif-classic table {
   font-family: 'Garamond', serif;
   font-style: italic;
 }
-.style-serif-classic article table th {
+.style-serif-classic table th {
   background: #1a1a1a;
   color: #f5f0e8;
   font-weight: 600;
@@ -1159,20 +1159,20 @@
   letter-spacing: -0.01em;
   line-height: 1.7;
 }
-.style-sans-modern article h1 {
+.style-sans-modern h1 {
   font-weight: 700;
   letter-spacing: -0.03em;
   font-size: 2.8rem;
   line-height: 1.1;
   color: #1a1a1a;
 }
-.style-sans-modern article h2 {
+.style-sans-modern h2 {
   font-weight: 600;
   letter-spacing: -0.02em;
   border-bottom: 1px solid #e5e5e5;
   color: #1a1a1a;
 }
-.style-sans-modern article table th {
+.style-sans-modern table th {
   background: #f5f5f5;
   color: #1a1a1a;
   font-weight: 600;
@@ -1191,20 +1191,20 @@
   border: 2px dashed #c4a070;
   transform: rotate(-0.3deg);
 }
-.style-hand-written article h1 {
+.style-hand-written h1 {
   color: #c43e3e;
   font-weight: 700;
   text-align: center;
   font-size: 3rem;
   letter-spacing: 0.02em;
 }
-.style-hand-written article h2 {
+.style-hand-written h2 {
   color: #2a4a8a;
   border-bottom: 2px dashed #c4a070;
   font-weight: 600;
   font-size: 1.8rem;
 }
-.style-hand-written article blockquote {
+.style-hand-written blockquote {
   background: #fff8e1;
   border: 2px dashed #c4a070;
   border-left: 6px solid #c43e3e;
@@ -1224,42 +1224,42 @@
   line-height: 1.9;
   font-size: 0.95rem;
 }
-.style-pixel-font article h1 {
+.style-pixel-font h1 {
   color: #39ff14;
   font-size: 1.8rem;
   text-shadow: 3px 3px 0 #ff10f0;
   letter-spacing: 0.1em;
 }
-.style-pixel-font article h2 {
+.style-pixel-font h2 {
   color: #ff10f0;
   border-bottom: 4px solid #39ff14;
   font-size: 1rem;
   text-transform: uppercase;
 }
-.style-pixel-font article table {
+.style-pixel-font table {
   background: #000;
   border: 2px solid #39ff14;
 }
-.style-pixel-font article table th {
+.style-pixel-font table th {
   background: #ff10f0;
   color: #000;
   font-size: 0.7em;
   letter-spacing: 0.05em;
 }
-.style-pixel-font article blockquote {
+.style-pixel-font blockquote {
   background: #111;
   border: 3px solid #39ff14;
   border-left: 6px solid #ff10f0;
   color: #39ff14;
   font-size: 0.85em;
 }
-.style-pixel-font article code {
+.style-pixel-font code {
   background: #ff10f0;
   color: #000;
   font-family: 'Press Start 2P', monospace;
   font-size: 0.7em;
 }
-.style-pixel-font article a {
+.style-pixel-font a {
   color: #ffea00;
   text-decoration: underline;
 }
@@ -1285,27 +1285,27 @@
   font-weight: 700;
   z-index: 1;
 }
-.style-chinese-kai article h1 {
+.style-chinese-kai h1 {
   color: #1a1a1a;
   text-align: center;
   font-weight: 700;
   letter-spacing: 0.3em;
   font-size: 2.4rem;
 }
-.style-chinese-kai article h2 {
+.style-chinese-kai h2 {
   color: #1a1a1a;
   border-bottom: 1px solid #1a1a1a;
   text-align: center;
   letter-spacing: 0.2em;
   font-weight: 600;
 }
-.style-chinese-kai article blockquote {
+.style-chinese-kai blockquote {
   background: rgba(192, 57, 43, 0.08);
   border-left: 4px solid #1a1a1a;
   color: #1a1a1a;
   font-style: normal;
 }
-.style-chinese-kai article table th {
+.style-chinese-kai table th {
   background: #1a1a1a;
   color: #f5e8c7;
   font-weight: 600;
@@ -1320,47 +1320,47 @@
   line-height: 1.8;
   border: 1px solid #3b82f6;
 }
-.style-monospace article h1 {
+.style-monospace h1 {
   color: #3b82f6;
   font-weight: 700;
   font-size: 2rem;
 }
-.style-monospace article h1::before {
+.style-monospace h1::before {
   content: '$ ';
   color: #22c55e;
 }
-.style-monospace article h2 {
+.style-monospace h2 {
   color: #22c55e;
   border-bottom: 1px dashed #3b82f6;
   font-weight: 600;
 }
-.style-monospace article h2::before {
+.style-monospace h2::before {
   content: '> ';
   color: #3b82f6;
 }
-.style-monospace article blockquote {
+.style-monospace blockquote {
   background: #0a0a0a;
   border-left: 4px solid #22c55e;
   color: #d4d4d4;
 }
-.style-monospace article blockquote::before {
+.style-monospace blockquote::before {
   content: '// ';
   color: #6a737d;
 }
-.style-monospace article code {
+.style-monospace code {
   background: #0a0a0a;
   color: #f97583;
   border: 1px solid #333;
 }
-.style-monospace article table th {
+.style-monospace table th {
   background: #0a0a0a;
   color: #3b82f6;
   border: 1px solid #333;
 }
-.style-monospace article table td {
+.style-monospace table td {
   border: 1px solid #333;
 }
-.style-monospace article a {
+.style-monospace a {
   color: #3b82f6;
   text-decoration: underline;
 }
@@ -1391,20 +1391,20 @@
   box-shadow: 4px 4px 0 rgba(255, 105, 180, 0.8);
   z-index: 1;
 }
-.style-y2k article h1 {
+.style-y2k h1 {
   color: #ffffff;
   text-shadow: 3px 3px 0 #0066ff, -3px -3px 0 #ff69b4;
   font-size: 2.8rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
-.style-y2k article h2 {
+.style-y2k h2 {
   color: #ff69b4;
   border-bottom: 2px solid #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
-.style-y2k article blockquote {
+.style-y2k blockquote {
   background: rgba(255, 255, 255, 0.2);
   border: 2px solid #ffffff;
   border-left: 6px solid #ff69b4;
@@ -1433,13 +1433,13 @@
   z-index: 1;
   pointer-events: none;
 }
-.style-psychedelic-60s article {
+.style-psychedelic-60s {
   background: rgba(0, 0, 0, 0.3);
   padding: 2rem;
   border-radius: 12px;
   backdrop-filter: blur(4px);
 }
-.style-psychedelic-60s article h1 {
+.style-psychedelic-60s h1 {
   color: #ffff00;
   text-shadow: 2px 2px 0 #ff6600, 4px 4px 0 #9933ff;
   font-size: 3rem;
@@ -1447,14 +1447,14 @@
   letter-spacing: 0.1em;
   text-align: center;
 }
-.style-psychedelic-60s article h2 {
+.style-psychedelic-60s h2 {
   color: #ffffff;
   border-bottom: 3px solid #ffff00;
   text-align: center;
   font-style: italic;
   letter-spacing: 0.1em;
 }
-.style-psychedelic-60s article blockquote {
+.style-psychedelic-60s blockquote {
   background: rgba(153, 51, 255, 0.4);
   border: 2px solid #ffff00;
   color: #ffffff;
@@ -1485,17 +1485,17 @@
   z-index: 1;
   pointer-events: none;
 }
-.style-retro-80s article h1 {
+.style-retro-80s h1 {
   color: #ffffff;
   text-shadow: 3px 3px 0 #ff10f0, 6px 6px 0 #6633ff;
   font-size: 2.8rem;
 }
-.style-retro-80s article h2 {
+.style-retro-80s h2 {
   color: #00ffff;
   border-bottom: 2px solid #ff10f0;
   text-shadow: 0 0 8px #00ffff;
 }
-.style-retro-80s article blockquote {
+.style-retro-80s blockquote {
   background: rgba(0, 0, 0, 0.4);
   border: 2px solid #00ffff;
   border-left: 6px solid #ff10f0;
@@ -1521,7 +1521,7 @@
   z-index: 1;
   pointer-events: none;
 }
-.style-grunge-90s article {
+.style-grunge-90s {
   background: rgba(255, 255, 255, 0.9);
   padding: 2rem 2.5rem;
   margin: 1rem;
@@ -1529,19 +1529,19 @@
   transform: rotate(-0.5deg);
   box-shadow: 3px 3px 0 #1a1a1a;
 }
-.style-grunge-90s article h1 {
+.style-grunge-90s h1 {
   color: #8b0000;
   text-transform: uppercase;
   letter-spacing: -0.02em;
   font-size: 2.6rem;
 }
-.style-grunge-90s article h2 {
+.style-grunge-90s h2 {
   color: #1a1a1a;
   border-bottom: 4px solid #8b0000;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-.style-grunge-90s article blockquote {
+.style-grunge-90s blockquote {
   background: #1a1a1a;
   color: #c87856;
   border-left: 4px solid #8b0000;
@@ -1576,7 +1576,7 @@
   pointer-events: none;
   opacity: 0.7;
 }
-.style-disco-70s article h1 {
+.style-disco-70s h1 {
   color: #d4af37;
   text-align: center;
   text-transform: uppercase;
@@ -1584,14 +1584,14 @@
   font-size: 2.4rem;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
-.style-disco-70s article h2 {
+.style-disco-70s h2 {
   color: #d4af37;
   border-bottom: 1px solid #d4af37;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
-.style-disco-70s article blockquote {
+.style-disco-70s blockquote {
   background: rgba(212, 175, 55, 0.15);
   border: 1px solid #d4af37;
   border-left: 4px solid #d4af37;
@@ -1632,21 +1632,21 @@
   border-bottom: 70px solid #ff1493;
   z-index: 1;
 }
-.style-mtv-90s article h1 {
+.style-mtv-90s h1 {
   color: #ff1493;
   text-shadow: 3px 3px 0 #00bfff;
   text-transform: uppercase;
   font-size: 3rem;
   transform: rotate(-2deg);
 }
-.style-mtv-90s article h2 {
+.style-mtv-90s h2 {
   color: #00bfff;
   border-bottom: 4px solid #ff1493;
   text-transform: uppercase;
   text-shadow: 2px 2px 0 #ffff00;
   transform: rotate(-1deg);
 }
-.style-mtv-90s article blockquote {
+.style-mtv-90s blockquote {
   background: #ff1493;
   color: #ffff00;
   border: 3px solid #00bfff;
@@ -1678,23 +1678,23 @@
   z-index: 1;
   pointer-events: none;
 }
-.style-paper-texture article {
+.style-paper-texture {
   background: rgba(255, 250, 240, 0.5);
   padding: 2rem;
   border-radius: 4px;
 }
-.style-paper-texture article h1 {
+.style-paper-texture h1 {
   color: #5c3317;
   font-weight: 700;
   letter-spacing: 0.03em;
 }
-.style-paper-texture article h2 {
+.style-paper-texture h2 {
   color: #5c3317;
   border-bottom: 2px solid #5c3317;
   font-weight: 600;
   letter-spacing: 0.05em;
 }
-.style-paper-texture article blockquote {
+.style-paper-texture blockquote {
   background: rgba(92, 51, 23, 0.1);
   border: 1px solid #5c3317;
   border-left: 4px solid #5c3317;
@@ -1708,7 +1708,7 @@
   color: #ffffff;
   font-family: 'Inter', sans-serif;
 }
-.style-frosted-glass article {
+.style-frosted-glass {
   background: rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
@@ -1717,28 +1717,28 @@
   padding: 2rem 2.5rem;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
-.style-frosted-glass article h1 {
+.style-frosted-glass h1 {
   color: #ffffff;
   font-weight: 700;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-.style-frosted-glass article h2 {
+.style-frosted-glass h2 {
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-.style-frosted-glass article table {
+.style-frosted-glass table {
   background: rgba(255, 255, 255, 0.15);
   border-radius: 8px;
 }
-.style-frosted-glass article table th {
+.style-frosted-glass table th {
   background: rgba(255, 255, 255, 0.25);
 }
-.style-frosted-glass article blockquote {
+.style-frosted-glass blockquote {
   background: rgba(255, 255, 255, 0.2);
   border-left: 4px solid rgba(255, 255, 255, 0.6);
   border-radius: 0 8px 8px 0;
 }
-.style-frosted-glass article code {
+.style-frosted-glass code {
   background: rgba(0, 0, 0, 0.25);
   color: #fff;
 }
@@ -1761,7 +1761,7 @@
   z-index: 1;
   pointer-events: none;
 }
-.style-metallic article h1 {
+.style-metallic h1 {
   background: linear-gradient(135deg, #d4af37 0%, #ffffff 50%, #d4af37 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -1770,21 +1770,21 @@
   text-align: center;
   font-weight: 700;
 }
-.style-metallic article h2 {
+.style-metallic h2 {
   color: #d4af37;
   border-bottom: 1px solid #d4af37;
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-.style-metallic article blockquote {
+.style-metallic blockquote {
   background: rgba(212, 175, 55, 0.1);
   border: 1px solid #d4af37;
   border-left: 4px solid #d4af37;
   color: #d4af37;
   font-style: italic;
 }
-.style-metallic article table th {
+.style-metallic table th {
   background: #d4af37;
   color: #1a1a1a;
 }
@@ -1814,22 +1814,22 @@
   z-index: 1;
   pointer-events: none;
 }
-.style-wood-grain article {
+.style-wood-grain {
   background: rgba(255, 250, 240, 0.4);
   padding: 2rem;
   border-radius: 8px;
 }
-.style-wood-grain article h1 {
+.style-wood-grain h1 {
   color: #5c3317;
   font-weight: 700;
   letter-spacing: 0.05em;
 }
-.style-wood-grain article h2 {
+.style-wood-grain h2 {
   color: #5c3317;
   border-bottom: 3px double #5c3317;
   font-weight: 600;
 }
-.style-wood-grain article blockquote {
+.style-wood-grain blockquote {
   background: rgba(92, 51, 23, 0.15);
   border: 1px solid #5c3317;
   border-left: 4px solid #5c3317;
@@ -1854,24 +1854,24 @@
   z-index: 1;
   pointer-events: none;
 }
-.style-water-ripple article {
+.style-water-ripple {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(8px);
   border-radius: 12px;
   padding: 2rem;
 }
-.style-water-ripple article h1 {
+.style-water-ripple h1 {
   color: #ffffff;
   text-align: center;
   font-weight: 600;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
-.style-water-ripple article h2 {
+.style-water-ripple h2 {
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   font-weight: 500;
 }
-.style-water-ripple article blockquote {
+.style-water-ripple blockquote {
   background: rgba(255, 255, 255, 0.2);
   border-left: 4px solid #ffffff;
   color: #ffffff;
@@ -1894,17 +1894,17 @@
   z-index: 1;
   pointer-events: none;
 }
-.style-fabric article h1 {
+.style-fabric h1 {
   color: #1e3a8a;
   font-weight: 700;
   letter-spacing: 0.02em;
 }
-.style-fabric article h2 {
+.style-fabric h2 {
   color: #a82d2d;
   border-bottom: 2px dashed #1e3a8a;
   font-weight: 600;
 }
-.style-fabric article blockquote {
+.style-fabric blockquote {
   background: rgba(30, 58, 138, 0.08);
   border: 1px solid #1e3a8a;
   border-left: 4px solid #a82d2d;
@@ -1937,14 +1937,14 @@
   z-index: 1;
   pointer-events: none;
 }
-.style-modern-tech article {
+.style-modern-tech {
   background: rgba(10, 22, 40, 0.5);
   backdrop-filter: blur(8px);
   border: 1px solid rgba(59, 130, 246, 0.3);
   border-radius: 12px;
   padding: 2rem 2.5rem;
 }
-.style-modern-tech article h1 {
+.style-modern-tech h1 {
   background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -1953,31 +1953,31 @@
   font-weight: 700;
   letter-spacing: -0.02em;
 }
-.style-modern-tech article h2 {
+.style-modern-tech h2 {
   color: #60a5fa;
   border-bottom: 1px solid rgba(59, 130, 246, 0.3);
   font-weight: 600;
 }
-.style-modern-tech article table {
+.style-modern-tech table {
   background: rgba(0, 0, 0, 0.3);
   border-radius: 8px;
 }
-.style-modern-tech article table th {
+.style-modern-tech table th {
   background: rgba(59, 130, 246, 0.2);
   color: #60a5fa;
   border-color: rgba(59, 130, 246, 0.3);
 }
-.style-modern-tech article blockquote {
+.style-modern-tech blockquote {
   background: rgba(59, 130, 246, 0.1);
   border-left: 4px solid #3b82f6;
   color: #cbd5e1;
 }
-.style-modern-tech article code {
+.style-modern-tech code {
   background: rgba(59, 130, 246, 0.2);
   color: #93c5fd;
   font-family: 'JetBrains Mono', monospace;
 }
-.style-modern-tech article a {
+.style-modern-tech a {
   color: #60a5fa;
 }
 
@@ -1992,7 +1992,7 @@
   border: 1px solid #0a0a0a;
   padding: 4rem 3rem;
 }
-.style-editorial article h1 {
+.style-editorial h1 {
   color: #0a0a0a;
   font-weight: 700;
   font-size: 3.4rem;
@@ -2000,7 +2000,7 @@
   letter-spacing: -0.02em;
   margin-bottom: 2rem;
 }
-.style-editorial article h2 {
+.style-editorial h2 {
   color: #c43e3e;
   border-bottom: 2px solid #0a0a0a;
   font-weight: 700;
@@ -2009,7 +2009,7 @@
   letter-spacing: 0.02em;
   text-transform: none;
 }
-.style-editorial article blockquote {
+.style-editorial blockquote {
   background: none;
   border-left: 6px solid #c43e3e;
   font-size: 1.4rem;
@@ -2031,24 +2031,24 @@
   letter-spacing: 0.02em;
   border: 1px solid #e5e0d8;
 }
-.style-nordic article h1 {
+.style-nordic h1 {
   color: #1a1a1a;
   font-weight: 300;
   font-size: 2.8rem;
   letter-spacing: 0.05em;
 }
-.style-nordic article h2 {
+.style-nordic h2 {
   color: #5a6a7a;
   font-weight: 400;
   border-bottom: 1px solid #c8d5e0;
   letter-spacing: 0.05em;
 }
-.style-nordic article table th {
+.style-nordic table th {
   background: #c8d5e0;
   color: #1a1a1a;
   font-weight: 500;
 }
-.style-nordic article blockquote {
+.style-nordic blockquote {
   background: #f5e6e0;
   border-left: 4px solid #c8d5e0;
   color: #5a4a4a;
@@ -2061,36 +2061,36 @@
   color: #cbd5e1;
   font-family: 'Inter', sans-serif;
 }
-.style-dark-first article h1 {
+.style-dark-first h1 {
   color: #ffffff;
   font-weight: 700;
   font-size: 2.6rem;
 }
-.style-dark-first article h2 {
+.style-dark-first h2 {
   color: #60a5fa;
   border-bottom: 1px solid #1f2937;
   font-weight: 600;
 }
-.style-dark-first article table {
+.style-dark-first table {
   background: #111111;
 }
-.style-dark-first article table th {
+.style-dark-first table th {
   background: #1f2937;
   color: #60a5fa;
 }
-.style-dark-first article table td {
+.style-dark-first table td {
   border-color: #1f2937;
 }
-.style-dark-first article blockquote {
+.style-dark-first blockquote {
   background: #111111;
   border-left: 4px solid #3b82f6;
   color: #cbd5e1;
 }
-.style-dark-first article code {
+.style-dark-first code {
   background: #1f2937;
   color: #93c5fd;
 }
-.style-dark-first article a {
+.style-dark-first a {
   color: #60a5fa;
 }
 
@@ -2114,7 +2114,7 @@
   background: #ff00ff;
   z-index: 1;
 }
-.style-brutalism article h1 {
+.style-brutalism h1 {
   color: #0000ff;
   text-decoration: underline;
   text-decoration-thickness: 4px;
@@ -2122,35 +2122,35 @@
   font-family: 'Courier New', monospace;
   text-transform: uppercase;
 }
-.style-brutalism article h2 {
+.style-brutalism h2 {
   color: #ff00ff;
   border-bottom: 4px solid #000;
   font-size: 1.6rem;
   text-transform: uppercase;
   font-family: 'Arial Black', sans-serif;
 }
-.style-brutalism article table {
+.style-brutalism table {
   background: #fff;
   border: 2px solid #000;
 }
-.style-brutalism article table th {
+.style-brutalism table th {
   background: #000;
   color: #ffff00;
   text-transform: uppercase;
   font-size: 0.9em;
   border-color: #000;
 }
-.style-brutalism article table td {
+.style-brutalism table td {
   border-color: #000;
 }
-.style-brutalism article blockquote {
+.style-brutalism blockquote {
   background: #000;
   color: #ffff00;
   border: 2px solid #0000ff;
   font-family: 'Courier New', monospace;
   font-weight: 700;
 }
-.style-brutalism article a {
+.style-brutalism a {
   color: #ff00ff;
   text-decoration: underline wavy #000;
   font-weight: 700;
@@ -2163,7 +2163,7 @@
   font-family: 'Georgia', 'Times New Roman', serif;
   font-weight: 400;
 }
-.style-magazine article h1 {
+.style-magazine h1 {
   color: #0a0a0a;
   font-weight: 700;
   font-size: 3.2rem;
@@ -2172,7 +2172,7 @@
   text-align: center;
   text-transform: uppercase;
 }
-.style-magazine article h2 {
+.style-magazine h2 {
   color: #0a0a0a;
   border-top: 4px double #0a0a0a;
   border-bottom: 4px double #0a0a0a;
@@ -2183,7 +2183,7 @@
   letter-spacing: 0.2em;
   font-weight: 700;
 }
-.style-magazine article blockquote {
+.style-magazine blockquote {
   background: #f5f5f5;
   border: none;
   border-top: 2px solid #0a0a0a;
@@ -2194,7 +2194,7 @@
   padding: 1.5rem;
   margin: 2rem 0;
 }
-.style-magazine article table th {
+.style-magazine table th {
   background: #0a0a0a;
   color: #ffffff;
   text-transform: uppercase;
@@ -2210,18 +2210,18 @@
   font-weight: 400;
   border: 3px solid #2196f3;
 }
-.style-flat-design article h1 {
+.style-flat-design h1 {
   color: #2196f3;
   font-weight: 500;
   font-size: 2.6rem;
 }
-.style-flat-design article h2 {
+.style-flat-design h2 {
   color: #f44336;
   border-bottom: 4px solid #2196f3;
   font-weight: 500;
   text-transform: none;
 }
-.style-flat-design article table th {
+.style-flat-design table th {
   background: #2196f3;
   color: white;
   font-weight: 500;
@@ -2229,10 +2229,10 @@
   font-size: 0.85em;
   letter-spacing: 0.05em;
 }
-.style-flat-design article table td {
+.style-flat-design table td {
   border: 1px solid #e0e0e0;
 }
-.style-flat-design article blockquote {
+.style-flat-design blockquote {
   background: #4caf50;
   color: white;
   border: none;
@@ -2247,35 +2247,35 @@
   font-family: 'Roboto', 'Inter', sans-serif;
   font-weight: 400;
 }
-.style-material-design article {
+.style-material-design {
   background: #ffffff;
   padding: 2.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
 }
-.style-material-design article h1 {
+.style-material-design h1 {
   color: #1976d2;
   font-weight: 500;
   font-size: 2.4rem;
   letter-spacing: -0.01em;
 }
-.style-material-design article h2 {
+.style-material-design h2 {
   color: #1976d2;
   border-bottom: 2px solid #1976d2;
   font-weight: 500;
   font-size: 1.5rem;
 }
-.style-material-design article table {
+.style-material-design table {
   background: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
 }
-.style-material-design article table th {
+.style-material-design table th {
   background: #1976d2;
   color: white;
   font-weight: 500;
 }
-.style-material-design article blockquote {
+.style-material-design blockquote {
   background: #e3f2fd;
   border-left: 4px solid #1976d2;
   color: #0d47a1;
@@ -2290,25 +2290,25 @@
   font-weight: 500;
   border-radius: 24px;
 }
-.style-3d-illustration article h1 {
+.style-3d-illustration h1 {
   color: #2a2a4a;
   font-weight: 700;
   font-size: 2.8rem;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
 }
-.style-3d-illustration article h2 {
+.style-3d-illustration h2 {
   color: #4a3a6a;
   border-bottom: 3px solid #ffffff;
   font-weight: 600;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
-.style-3d-illustration article table th {
+.style-3d-illustration table th {
   background: rgba(255, 255, 255, 0.6);
   color: #2a2a4a;
   font-weight: 600;
   border-radius: 8px;
 }
-.style-3d-illustration article blockquote {
+.style-3d-illustration blockquote {
   background: rgba(255, 255, 255, 0.5);
   border: 1px solid #ffffff;
   border-left: 4px solid #c43e6e;
@@ -2329,14 +2329,14 @@
   font-family: 'Inter', sans-serif;
   font-weight: 400;
 }
-.style-gradient-mesh article {
+.style-gradient-mesh {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
   border-radius: 16px;
   padding: 2.5rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-.style-gradient-mesh article h1 {
+.style-gradient-mesh h1 {
   background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #06b6d4 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -2345,12 +2345,12 @@
   font-weight: 800;
   letter-spacing: -0.02em;
 }
-.style-gradient-mesh article h2 {
+.style-gradient-mesh h2 {
   color: #8b5cf6;
   border-bottom: 2px solid #ec4899;
   font-weight: 700;
 }
-.style-gradient-mesh article blockquote {
+.style-gradient-mesh blockquote {
   background: rgba(139, 92, 246, 0.1);
   border-left: 4px solid #8b5cf6;
   color: #4a3a6a;

@@ -509,12 +509,14 @@ def colors_text(colors):
 
 def style_page(s):
     """生成单个风格详情页"""
+    cls = f"style-{s['slug']}"
     return f"""---
 title: {s['nameZh']} - {s['name']}
 sidebar_label: {s['nameZh']}
 description: {s['description'][:80]}...
-wrapperClassName: style-{s['slug']}
 ---
+
+<div class="{cls}">
 
 # {s['nameZh']}({s['name']})
 
@@ -558,6 +560,8 @@ wrapperClassName: style-{s['slug']}
 ## 相关风格
 
 浏览其他 **{next(c['name'] for c in CATEGORIES if c['id'] == s['category'])}** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>
 """
 
 def category_page(cat, styles):

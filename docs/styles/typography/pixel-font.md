@@ -2,8 +2,9 @@
 title: 像素字 - Pixel Font
 sidebar_label: 像素字
 description: 像素字体由方格像素拼出字母,源自 8-bit 时代游戏机,在低分辨率下保持可读,代表复古、游戏、极客文化。...
-wrapperClassName: style-pixel-font
 ---
+
+<div class="style-pixel-font">
 
 # 像素字(Pixel Font)
 
@@ -58,3 +59,5 @@ Press Start 2P / VT323 / Pixelify Sans
 ## 相关风格
 
 浏览其他 **字体排版** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

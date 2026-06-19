@@ -2,8 +2,9 @@
 title: 赛博朋克 - Cyberpunk
 sidebar_label: 赛博朋克
 description: 源自 80 年代科幻文学(William Gibson《神经漫游者》),用霓虹粉/青 + 故障效果 + 暗色背景 + 等宽字体,营造反乌托邦未来感。...
-wrapperClassName: style-cyberpunk
 ---
+
+<div class="style-cyberpunk">
 
 # 赛博朋克(Cyberpunk)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-cyberpunk
 ## 相关风格
 
 浏览其他 **视觉表现** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

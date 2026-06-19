@@ -2,8 +2,9 @@
 title: 新拟物 - Neumorphism
 sidebar_label: 新拟物
 description: 2020 年由设计师 Alexander Plyuto 推广,结合拟物与扁平,使用同色阴影同时表现凸起与凹陷,营造出从背景"长出"的柔软 UI 元素。...
-wrapperClassName: style-neumorphism
 ---
+
+<div class="style-neumorphism">
 
 # 新拟物(Neumorphism)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-neumorphism
 ## 相关风格
 
 浏览其他 **视觉表现** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

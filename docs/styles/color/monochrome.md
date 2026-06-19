@@ -2,8 +2,9 @@
 title: 单色调 - Monochrome
 sidebar_label: 单色调
 description: 使用同一色相的不同明度/饱和度构成画面,通过层次而非色彩对比制造视觉张力,营造统一、高级、专业的氛围。...
-wrapperClassName: style-monochrome
 ---
+
+<div class="style-monochrome">
 
 # 单色调(Monochrome)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-monochrome
 ## 相关风格
 
 浏览其他 **配色方案** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

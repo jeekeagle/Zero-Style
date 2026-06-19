@@ -2,8 +2,9 @@
 title: 织物质感 - Fabric Texture
 sidebar_label: 织物质感
 description: 模拟布料/织物纹理(亚麻/棉/丝绸/羊毛),传达温暖、舒适、手作品牌感,常见于服装、家居、手作品牌。...
-wrapperClassName: style-fabric
 ---
+
+<div class="style-fabric">
 
 # 织物质感(Fabric Texture)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-fabric
 ## 相关风格
 
 浏览其他 **材质纹理** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

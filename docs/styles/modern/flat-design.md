@@ -2,8 +2,9 @@
 title: 扁平化设计 - Flat Design
 sidebar_label: 扁平化设计
 description: 2012 年微软 Metro 与苹果 iOS 7 推动的扁平化设计,反对拟物化的渐变/阴影,使用纯色 + 简洁图形,塑造现代移动 UI 语言。...
-wrapperClassName: style-flat-design
 ---
+
+<div class="style-flat-design">
 
 # 扁平化设计(Flat Design)
 
@@ -59,3 +60,5 @@ wrapperClassName: style-flat-design
 ## 相关风格
 
 浏览其他 **现代趋势** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

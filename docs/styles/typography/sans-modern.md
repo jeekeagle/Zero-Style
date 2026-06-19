@@ -2,8 +2,9 @@
 title: 无衬线现代 - Sans Modern
 sidebar_label: 无衬线现代
 description: 无衬线体(Sans-Serif)去除笔画末端的装饰,以几何或人文风格的简洁造型为标志,代表现代、清晰、中性,广泛应用在屏幕 UI。...
-wrapperClassName: style-sans-modern
 ---
+
+<div class="style-sans-modern">
 
 # 无衬线现代(Sans Modern)
 
@@ -57,3 +58,5 @@ Helvetica / Inter / SF Pro / Roboto
 ## 相关风格
 
 浏览其他 **字体排版** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

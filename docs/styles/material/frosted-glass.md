@@ -2,8 +2,9 @@
 title: 毛玻璃 - Frosted Glass
 sidebar_label: 毛玻璃
 description: 毛玻璃效果通过背景模糊 + 半透明实现,在 UI 中营造层次感与空间感,是 Apple 推动的现代界面语言。...
-wrapperClassName: style-frosted-glass
 ---
+
+<div class="style-frosted-glass">
 
 # 毛玻璃(Frosted Glass)
 
@@ -57,3 +58,5 @@ wrapperClassName: style-frosted-glass
 ## 相关风格
 
 浏览其他 **材质纹理** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

@@ -2,8 +2,9 @@
 title: 印度曼海蒂 - Indian Mehndi
 sidebar_label: 印度曼海蒂
 description: 印度传统身体彩绘艺术,以指甲花(海娜)绘制精细的藤蔓、花卉、几何图案,用于婚礼、宗教节日,象征好运与祝福。...
-wrapperClassName: style-indian-mehndi
 ---
+
+<div class="style-indian-mehndi">
 
 # 印度曼海蒂(Indian Mehndi)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-indian-mehndi
 ## 相关风格
 
 浏览其他 **东方古典** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

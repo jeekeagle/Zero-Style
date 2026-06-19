@@ -2,8 +2,9 @@
 title: 中国水墨 - Chinese Ink Wash
 sidebar_label: 中国水墨
 description: 起源于唐宋的中国水墨画,以墨色浓淡(焦/浓/重/淡/清)表现山水意境,"留白"为构图核心,讲究气韵生动。...
-wrapperClassName: style-chinese-ink
 ---
+
+<div class="style-chinese-ink">
 
 # 中国水墨(Chinese Ink Wash)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-chinese-ink
 ## 相关风格
 
 浏览其他 **东方古典** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

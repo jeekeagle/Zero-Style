@@ -2,8 +2,9 @@
 title: 90年代垃圾摇滚 - Grunge 90s
 sidebar_label: 90年代垃圾摇滚
 description: 90 年代垃圾摇滚(Grunge)与 X 世代反主流文化下的设计,以撕裂纸张、粗糙纹理、不规则排版、DIY 美学为标志。...
-wrapperClassName: style-grunge-90s
 ---
+
+<div class="style-grunge-90s">
 
 # 90年代垃圾摇滚(Grunge 90s)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-grunge-90s
 ## 相关风格
 
 浏览其他 **时代年代** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

@@ -2,8 +2,9 @@
 title: 装饰艺术 - Art Deco
 sidebar_label: 装饰艺术
 description: 1920-30 年代法国兴起的装饰艺术风格,以奢华、对称、几何图案(扇形/锯齿/太阳放射)为标志,代表爵士时代的优雅。...
-wrapperClassName: style-art-deco
 ---
+
+<div class="style-art-deco">
 
 # 装饰艺术(Art Deco)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-art-deco
 ## 相关风格
 
 浏览其他 **视觉表现** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

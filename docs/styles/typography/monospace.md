@@ -2,8 +2,9 @@
 title: 等宽字 - Monospace
 sidebar_label: 等宽字
 description: 等宽字体(Monospace)每个字符宽度相同,源自打字机时代,在代码编辑、终端、数据表格中保持对齐,代表技术、精确。...
-wrapperClassName: style-monospace
 ---
+
+<div class="style-monospace">
 
 # 等宽字(Monospace)
 
@@ -58,3 +59,5 @@ JetBrains Mono / Fira Code / Menlo / Consolas
 ## 相关风格
 
 浏览其他 **字体排版** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

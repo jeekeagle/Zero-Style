@@ -2,8 +2,9 @@
 title: 玻璃拟态 - Glassmorphism
 sidebar_label: 玻璃拟态
 description: 2020 年随 macOS Big Sur 和 Windows 11 流行,以半透明背景 + 背景模糊 + 细边框,模拟磨砂玻璃质感,营造层次感与空间感。...
-wrapperClassName: style-glassmorphism
 ---
+
+<div class="style-glassmorphism">
 
 # 玻璃拟态(Glassmorphism)
 
@@ -59,3 +60,5 @@ wrapperClassName: style-glassmorphism
 ## 相关风格
 
 浏览其他 **视觉表现** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

@@ -2,8 +2,9 @@
 title: 60年代迷幻 - Psychedelic 60s
 sidebar_label: 60年代迷幻
 description: 1960 年代嬉皮士文化与 LSD 影响下的视觉风格,以漩涡图案、霓虹色、扭曲字体、自由反叛为标志。...
-wrapperClassName: style-psychedelic-60s
 ---
+
+<div class="style-psychedelic-60s">
 
 # 60年代迷幻(Psychedelic 60s)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-psychedelic-60s
 ## 相关风格
 
 浏览其他 **时代年代** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

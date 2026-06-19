@@ -2,8 +2,9 @@
 title: 瑞士国际 - Swiss Design
 sidebar_label: 瑞士国际
 description: 1950 年代瑞士发展出的平面设计风格,严格基于网格、Helvetica 字体的理性主义设计,强调客观性、可读性与功能性。...
-wrapperClassName: style-swiss-design
 ---
+
+<div class="style-swiss-design">
 
 # 瑞士国际(Swiss Design)
 
@@ -59,3 +60,5 @@ Helvetica / Akzidenz-Grotesk,严谨字号比例
 ## 相关风格
 
 浏览其他 **视觉表现** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

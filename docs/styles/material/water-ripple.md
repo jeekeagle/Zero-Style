@@ -2,8 +2,9 @@
 title: 水波纹 - Water Ripple
 sidebar_label: 水波纹
 description: 模拟水波/涟漪的动态效果,传达流动、清新、平静的氛围,常见于水品牌、Spa、冥想类应用。...
-wrapperClassName: style-water-ripple
 ---
+
+<div class="style-water-ripple">
 
 # 水波纹(Water Ripple)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-water-ripple
 ## 相关风格
 
 浏览其他 **材质纹理** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

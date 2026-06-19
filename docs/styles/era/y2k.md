@@ -2,8 +2,9 @@
 title: Y2K 千禧 - Y2K
 sidebar_label: Y2K 千禧
 description: Y2K(Year 2000)是 90 年代末-00 年代初的设计风格,以铬金属感、透明塑料、泡泡字、鲜艳渐变体现千禧年的乐观未来主义。...
-wrapperClassName: style-y2k
 ---
+
+<div class="style-y2k">
 
 # Y2K 千禧(Y2K)
 
@@ -60,3 +61,5 @@ Juice Box / Blambot Custom
 ## 相关风格
 
 浏览其他 **时代年代** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

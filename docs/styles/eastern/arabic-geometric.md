@@ -2,8 +2,9 @@
 title: 阿拉伯几何 - Arabic Geometric
 sidebar_label: 阿拉伯几何
 description: 伊斯兰艺术因避免偶像崇拜,发展出举世无双的几何图案(Star Pattern)与阿拉伯书法,体现了数学之美与对无限的崇敬。...
-wrapperClassName: style-arabic-geometric
 ---
+
+<div class="style-arabic-geometric">
 
 # 阿拉伯几何(Arabic Geometric)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-arabic-geometric
 ## 相关风格
 
 浏览其他 **东方古典** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

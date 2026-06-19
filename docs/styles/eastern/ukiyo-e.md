@@ -2,8 +2,9 @@
 title: 浮世绘 - Ukiyo-e
 sidebar_label: 浮世绘
 description: 江户时代(17-19 世纪)日本木刻版画,以鲜艳色彩、明确轮廓、平涂色块描绘歌舞伎、艺伎、风景,是日本最具国际影响力的艺术形式。...
-wrapperClassName: style-ukiyo-e
 ---
+
+<div class="style-ukiyo-e">
 
 # 浮世绘(Ukiyo-e)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-ukiyo-e
 ## 相关风格
 
 浏览其他 **东方古典** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

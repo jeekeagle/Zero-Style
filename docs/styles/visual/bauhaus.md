@@ -2,8 +2,9 @@
 title: 包豪斯 - Bauhaus
 sidebar_label: 包豪斯
 description: 1919 年由 Walter Gropius 在德国创立的包豪斯学校,强调艺术与技术的统一,使用基本几何形状(圆/方/三角)和原色,深刻影响现代设计。...
-wrapperClassName: style-bauhaus
 ---
+
+<div class="style-bauhaus">
 
 # 包豪斯(Bauhaus)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-bauhaus
 ## 相关风格
 
 浏览其他 **视觉表现** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

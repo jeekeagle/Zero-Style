@@ -2,8 +2,9 @@
 title: 唐卷草纹 - Tang Pattern
 sidebar_label: 唐卷草纹
 description: 唐代盛行的卷草纹(亦称唐草),以 S 形连续曲线串联花朵叶片,源自希腊传入并中国化,象征生生不息。...
-wrapperClassName: style-tang-pattern
 ---
+
+<div class="style-tang-pattern">
 
 # 唐卷草纹(Tang Pattern)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-tang-pattern
 ## 相关风格
 
 浏览其他 **东方古典** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

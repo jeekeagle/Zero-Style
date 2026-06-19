@@ -2,8 +2,9 @@
 title: 粉彩 - Pastel
 sidebar_label: 粉彩
 description: 粉彩色调源自 50 年代美式家居,以高明度、低饱和度的柔和色彩(粉、薄荷、淡蓝)为主,营造轻盈、温柔、怀旧的氛围。...
-wrapperClassName: style-pastel
 ---
+
+<div class="style-pastel">
 
 # 粉彩(Pastel)
 
@@ -59,3 +60,5 @@ wrapperClassName: style-pastel
 ## 相关风格
 
 浏览其他 **配色方案** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

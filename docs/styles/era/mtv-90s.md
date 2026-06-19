@@ -2,8 +2,9 @@
 title: 90年代MTV - MTV 90s
 sidebar_label: 90年代MTV
 description: 1990 年代 MTV 音乐频道的美学,以手绘涂鸦、撞色、碎片拼贴、卡通字体为代表,是 X 世代青年文化的视觉代表。...
-wrapperClassName: style-mtv-90s
 ---
+
+<div class="style-mtv-90s">
 
 # 90年代MTV(MTV 90s)
 
@@ -58,3 +59,5 @@ wrapperClassName: style-mtv-90s
 ## 相关风格
 
 浏览其他 **时代年代** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

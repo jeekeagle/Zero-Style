@@ -2,8 +2,9 @@
 title: 大地色 - Earth Tone
 sidebar_label: 大地色
 description: 源自自然大地色彩(棕、米、陶土、橄榄绿),传达温暖、可靠、自然、原始的感受,是户外/家居/手作品牌的常用配色。...
-wrapperClassName: style-earth-tone
 ---
+
+<div class="style-earth-tone">
 
 # 大地色(Earth Tone)
 
@@ -61,3 +62,5 @@ wrapperClassName: style-earth-tone
 ## 相关风格
 
 浏览其他 **配色方案** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>

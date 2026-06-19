@@ -2,8 +2,9 @@
 title: 日式禅意 - Japanese Zen
 sidebar_label: 日式禅意
 description: 日本禅宗美学,以"侘寂"(wabi-sabi)为核心理念,接受不完美、无常、不对称,体现极简、自然、安静的东方哲学。...
-wrapperClassName: style-japanese-zen
 ---
+
+<div class="style-japanese-zen">
 
 # 日式禅意(Japanese Zen)
 
@@ -59,3 +60,5 @@ wrapperClassName: style-japanese-zen
 ## 相关风格
 
 浏览其他 **东方古典** 分类下的设计风格,或查看完整 [风格目录](/all-styles)。
+
+</div>
